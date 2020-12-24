@@ -22,7 +22,7 @@
           </div>
           <button class="subscribe-btn">Подписаться на рассылку</button>
           <!-- <a href="#" class="left-request">Оставить заявку</a> -->
-          
+
           <vs-button  @click="popupActivo=true"><span class="left-request">Оставить заявку</span></vs-button>
           <p class="question-answers">Остались вопросы, звоните?</p>
           <p class="question-answers_media">Остались вопросы?</p>
@@ -148,7 +148,8 @@ name: "Newsletter",
         }
 
       .info{
-        font-family: "Aver-Medium";
+        font-family: "Aver-Demi";
+
         font-style: normal;
         font-weight: 800;
         font-size: 72px;
@@ -355,7 +356,7 @@ name: "Newsletter",
       text-align: center;
       color: #464646;
       margin-bottom: 10px;
-      
+
     }
     h6{
       font-weight: bold;

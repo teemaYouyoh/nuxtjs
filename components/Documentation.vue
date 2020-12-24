@@ -57,7 +57,7 @@
         </div>
 
       </div>
-     
+
           <div class="documents-wrapper  documents-wrapper__mob d-flex jc-sb f-wrap al-item-center">
              <no-ssr>
             <carousel :items="1" :loop="true" :stagePadding="20" >
@@ -206,7 +206,8 @@ name: "Documentation"
       }
     }
     .documents-title{
-      font-family: "Aver-Regular";
+      font-family: "Aver-Demi";
+
       font-style: normal;
       font-weight: 900;
       font-size: 72px;

@@ -272,7 +272,7 @@ export default {
         @media screen and (max-width: 960px){
             display: block;
         }
-       
+
         .forest-mob__carousel{
                margin-left: auto;
                 width: 95%;
@@ -366,7 +366,7 @@ export default {
       @media screen and (max-width: 560px){
           margin: 0 auto;
           width: 100%;
-      }  
+      }
     }
     .owl-carousel{
          @media screen and (max-width: 960px){
@@ -419,7 +419,7 @@ export default {
         color: #0B315E;
         max-width: 800px;
         margin-bottom: 73px;
-        font-family: "Aver-Regular";
+        font-family: "Aver-Demi";
         @media screen and (max-width: 1600px){
             font-size: 60px;
         }
@@ -527,7 +527,7 @@ export default {
              margin-top: 20px;
          }
     }
-   
+
    .owl-stage {
        right: 0px;
     }
