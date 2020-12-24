@@ -83,12 +83,13 @@ body{
     color: #0B315E;
     @media (max-width: 576px) {
       display: block;
-      padding: 85px 0 13px 0;
+      padding: 15px 0 13px 0;
 
     }
   }
   .title-map-media{
-    font-family: "Aver-Bold";
+    // font-family: "Aver-Bold";
+    font-family: "Aver-Regular";
     font-style: normal;
     font-weight: 800;
     font-size: 36px;

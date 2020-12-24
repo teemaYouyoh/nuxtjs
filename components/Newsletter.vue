@@ -41,6 +41,9 @@ name: "Newsletter"
   .newsletter{
     background-color: #F2F9FF;
     position: relative;
+    @media screen and (max-width: 560px){
+      background: #fff;
+    }
     .btn-up{
       position: absolute;
       bottom: 0;
@@ -54,6 +57,8 @@ name: "Newsletter"
         right: 50px;
         width: 50px;
         height: 50px;
+        border-radius: 50%;
+        display: none;
       }
       svg{
         width: 40px;
@@ -68,8 +73,8 @@ name: "Newsletter"
       padding-top: 176px;
       padding-bottom: 137px;
       @media(max-width: 768px){
-        padding-top: 117px;
-        padding-bottom: 91px;
+        padding-top: 80px;
+        padding-bottom: 30px;
       }
       @media (max-width: 576px) {
         align-items: flex-start;

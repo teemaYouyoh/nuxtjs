@@ -11,6 +11,25 @@
           <img src="../assets/img/advantage.png" class="advantages-pic right-pic" alt="advantages-pic">
         </div>
       </div>
+            <no-ssr>
+                <carousel class="adv-carousel" :items="1" :nav="false" :loop="true" :dots="false" :stagePadding="20">
+                    <div class="adv-slide">
+                        <div class="adv-photo">
+                            <img src="../assets/img/preim.png" alt="slide 1">
+                        </div>
+                    </div>
+                    <div class="adv-slide">
+                        <div class="adv-photo">
+                            <img src="../assets/img/preim.png" alt="slide 2">
+                        </div>
+                    </div>
+                    <div class="adv-slide">
+                        <div class="adv-photo">
+                            <img src="../assets/img/preim.png" alt="slide 3">
+                        </div>
+                    </div>
+                </carousel>
+            </no-ssr>
     </div>
 
       <div class="additional">
@@ -24,6 +43,7 @@
                   <path d="M19.75 11.7256H4.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M13.7002 5.70124L19.7502 11.7252L13.7002 17.7502" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+                <span>подробнее</span>
               </a>
             </div>
             <div class="card">
@@ -34,6 +54,7 @@
                   <path d="M19.75 11.7256H4.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M13.7002 5.70124L19.7502 11.7252L13.7002 17.7502" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+                <span>подробнее</span>
               </a>
             </div>
             <div class="card">
@@ -44,6 +65,7 @@
                   <path d="M19.75 11.7256H4.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M13.7002 5.70124L19.7502 11.7252L13.7002 17.7502" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+                <span>подробнее</span>
               </a>
             </div>
           </div>
@@ -59,10 +81,24 @@ name: "Advantages"
 </script>
 
 <style scoped lang="scss">
+  .owl-stage{
+      right: 70px;
+    }
   .advantages{
     background: #6544FB;
     @media screen and (max-width: 960px){
       background: #fff;
+    }
+    .owl-dots{
+      @media screen and (max-width: 960px){
+          display: none;
+      }
+    }
+    .adv-carousel{
+      display: none;
+       @media screen and (max-width: 960px){
+          display: block;
+      }
     }
     //padding-top: 205px;
     .advantages_wrapper{
@@ -87,6 +123,7 @@ name: "Advantages"
           }
            @media screen and (max-width: 960px){
                 font-size: 48px;
+                padding-bottom: 30px;
                 color: #0B315E;
             }
           @media screen and (max-width: 768px){
@@ -104,7 +141,9 @@ name: "Advantages"
           color: #FFFFFF;
            @media screen and (max-width: 960px){
                 color: #0B315E;
-                padding-top: 100px;
+                padding-top: 70px;
+                font-size: 16px;
+                margin-bottom: 10px;
             }
         }
       }
@@ -123,21 +162,32 @@ name: "Advantages"
       display: none;
     }
   }
-
+.owl-dots{
+  display: none;
+}
 
   .additional{
     padding-bottom: 175px;
     padding-top: 400px;
     background-color: #F2F9FF;
+    @media screen and (max-width: 960px){
+      background: #fff;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
     .additional-wrapper{
       display: flex;
       justify-content: space-between;
+        @media screen and (max-width: 960px){
+          flex-direction: column;
+        }
       .card:hover{
         cursor: pointer;
         background: #6544FB;
         box-shadow: 0px 81px 90px 7px rgba(0, 0, 0, 0.2);
         .details{
           color: #fff;
+          
         }
         .card{
           color: #fff;
@@ -153,9 +203,15 @@ name: "Advantages"
         flex-direction: column;
         justify-content: flex-start;
         transition: 0.5s;
+         @media screen and (max-width: 960px){
+           width: 100%;
+           min-height: unset;
+           margin-bottom: 25px;
+           padding: 0px 0px;
+         }
         .title{
           margin-top: 0;
-          font-family: "Avenir-heavy", sans-serif;
+          font-family: "Aver-Regular";
           font-style: normal;
           font-weight: 800;
           font-size: 24px;
@@ -187,9 +243,33 @@ name: "Advantages"
           height: 40px;
           border-radius: 50%;
           background: #6544FB;
+          @media screen and (max-width: 960px){
+            background: transparent;
+            width: unset;
+            height: unset;
+            border-radius: 0px;
+          }
+          span{
+            display: none;
+             @media screen and (max-width: 960px){
+              display: block;
+              font-size: 12px;
+              line-height: 110%;
+              letter-spacing: -0.03em;
+              color: #6544FB;
+              text-transform: uppercase;
+              padding-bottom: 5px;
+              border-bottom: 2px solid #6544FB;
+            }
+          }
           img{
             width: 20px;
             height: 20px;
+          }
+          svg{
+            @media screen and (max-width: 960px){
+              display: none;
+            }
           }
         }
       }
@@ -201,9 +281,16 @@ name: "Advantages"
      background: #fff;
      margin-left: auto;
      margin-right: 10px;
+     @media screen and (max-width: 960px){
+        background: transparent;
+     }
    }
   .additional .card:hover .details svg path{
     stroke: #6544FB;
-  }
-
+  } 
+   .additional .card:hover .details span{
+     color: #fff;
+     padding-bottom: 20px;
+   }
+  
 </style>

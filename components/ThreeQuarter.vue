@@ -99,7 +99,8 @@
     padding: 170px 0px 0px;
     background: #F5F5F7;
     @media screen and (max-width: 960px){
-        padding: 80px 0px;
+        padding: 80px 0px 0px;
+        background: #f9f9f9;
     }
     .quarter-about {
          font-family: "Geometria-Bold";
@@ -218,6 +219,15 @@
 
     .owl-dots{
         display: none;
+        @media screen and (max-width: 560px){
+            display: block;
+            text-align: right;
+            transform: translateY(-160px);
+            margin-right: 20px;
+        }
+    }
+    .owl-theme .owl-dots .owl-dot.active span{
+        background: #6544FB;
     }
    .owl-carousel .owl-stage:after{
           @media screen and (max-width: 960px){

@@ -12,8 +12,6 @@
       <Documentation />
       <Newsletter />
       <Footer />
-
-
   </div>
 </template>
 
@@ -45,6 +43,16 @@ export default {
   components: { Coworking, Infrastructure, Footer, }, }
 </script>
 
-<style>
-
+<style lang="scss">
+.documents-wrapper .owl-stage{
+        @media screen and (max-width: 560px) {
+          right: 20px;
+          margin-top: 20px;
+          margin-bottom: 40px;
+          margin-left: 30px;
+      }
+    }
+   .documents-wrapper .owl-theme .owl-dots{
+     margin-top: 50px;
+    }
 </style>

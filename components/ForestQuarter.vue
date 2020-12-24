@@ -347,6 +347,9 @@ export default {
     }
 .forest{
     background: #F9F9F9;
+    @media screen and (max-width: 960px){
+            background: #fff;
+        }
     .forest-carousel{
         position: relative;
         @media screen and (max-width: 960px){
@@ -391,7 +394,7 @@ export default {
 .quarter {
     padding: 170px 0px 100px;
       @media screen and (max-width: 960px){
-            padding: 80px 0px;
+            padding:40px 0px;
         }
     .quarter-about {
          font-family: "Geometria-Bold";

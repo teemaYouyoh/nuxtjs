@@ -23,7 +23,7 @@
             </div>
            <div class="header-phone">
                <a class="header-phone__number" href="tel:+88005005005">8 800 500 500 5</a>
-               <a class="header-phone__enter" href="#">вход</a>
+               <a class="header-phone__enter"  href="#">вход</a>
            </div>
            <div class="header-phone__mob">
                <a href="#"><img class="mob-tel" src="../assets/img/mobile-tel.svg" alt="phone"></a>
@@ -66,13 +66,22 @@
                </nav>
            </div>
         </div>
+        
+      <!-- <Feedback /> -->
     </div>
+    
 </template>
 
 <script>
+
 import $ from "jquery";
 
 export default {
+    data: {
+  },
+  methods: {
+},
+
   mounted() {
     $(document).ready(function() {
       $(".scrollto").click(function() {
@@ -214,6 +223,12 @@ export default {
             }
             .mob-tel{
                 margin-right: 10px;
+                 @media screen and (max-width: 768px){
+                     margin-right: 25px;
+                 }
+                  @media screen and (max-width: 560px){
+                     margin-right: 45px;
+                 }
             }
         }
         .header-phone {
@@ -259,7 +274,7 @@ export default {
     .menu__btn {
         display: flex;
         align-items: center;
-        position: fixed;
+        position: absolute;
         top: 18px;
         right: 20px;
         width: 26px;
@@ -331,6 +346,9 @@ export default {
     visibility: visible;
     left: 0;
     transition: all 0.5s;
+    }
+   #menu__toggle:checked ~  .menu__btn {
+        position: fixed;
     }
     .menu__box-last{
         display: flex;
