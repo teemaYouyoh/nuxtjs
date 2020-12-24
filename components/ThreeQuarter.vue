@@ -98,6 +98,9 @@
 .quarter {
     padding: 170px 0px 0px;
     background: #F5F5F7;
+    @media screen and (max-width: 960px){
+        padding: 80px 0px;
+    }
     .quarter-about {
          font-family: "Geometria-Bold";
         font-weight: 800;
@@ -170,8 +173,8 @@
         display: flex;
         justify-content: space-between;
          max-width: 440px;
-        @media screen and (max-width: 960px){
-            max-width: 330px;
+        @media screen and (max-width: 560px){
+            display: none;
         }
     }
     .quarter-advantage {
@@ -216,10 +219,21 @@
     .owl-dots{
         display: none;
     }
-   .owl-carousel{
+   .owl-carousel .owl-stage:after{
           @media screen and (max-width: 960px){
-              height: 500px;
+              display: none;
           }
+   }
+   .owl-carousel{
+       @media screen and (max-width: 960px){
+            height: 700px;
+        }
+         @media screen and (max-width: 768px){
+            height: 500px;
+        }
+         @media screen and (max-width: 560px){
+            height: 350px;
+        }
    }
     .carousel-navigation{
         display: flex;

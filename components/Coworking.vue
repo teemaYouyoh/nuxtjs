@@ -2,7 +2,7 @@
     <div class="coworking">
         <div class="coworking-container">
              <no-ssr>
-                <carousel class="сoworking-carousel" :items="1" :nav="false" :loop="true" :stagePadding="70">
+                <carousel class="сoworking-carousel" :items="1" :nav="false" :loop="true" :responsive="{0:{stagePadding:0},560:{stagePadding:70}}">
                     <div class="coworking-slide">
                         <h3 class="coworking-header"><span>Coworking</span>не отходяот дома.</h3>
                         <div class="coworking-photo">
@@ -52,8 +52,14 @@
    .coworking {
       background: #F9F9F9;
       padding: 100px 0px 200px;
+      @media screen and (max-width: 560px){
+          padding: 60px 0px 100px;
+      }
        .owl-stage {
             right: 70px !important;
+            @media screen and (max-width: 560px){
+                right: 0px !important;
+            }
         }
       .prev{
             position: absolute;
@@ -63,6 +69,9 @@
             max-width: 95px;
             max-height: 95px;
             cursor: pointer;
+             @media screen and (max-width: 560px){
+                 display: none;
+             }
         }
         .next{
             position: absolute;
@@ -72,6 +81,9 @@
             max-width: 95px;
             cursor: pointer;
             max-height: 95px;
+             @media screen and (max-width: 560px){
+                 display: none;
+             }
         }
        .coworking-container {
               margin-left: auto;
@@ -92,6 +104,16 @@
             @media screen and (max-width: 1600px){
                 font-size: 60px;
             }
+            @media screen and (max-width: 960px){
+                font-size: 48px;
+                max-width: 400px;
+                margin-bottom: 40px;
+            }
+          @media screen and (max-width: 768px){
+                font-size: 36px;
+                max-width: 300px;
+                margin-bottom: 30px;
+            }
             span{
                 display: block;
                 color: #6544FB;
@@ -109,6 +131,10 @@
             font-size: 22px;
             line-height: 150%;
             color: #0B315E;
+             @media screen and (max-width: 768px){
+                 font-size: 16px;
+                 line-height: 145%;
+             }
         }
         .owl-dots{
             display: none;

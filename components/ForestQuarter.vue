@@ -141,10 +141,107 @@
                             </template>
                     </carousel>
                 </no-ssr>
+                <div class="forest-mobile">
+                    <div class="forest-itm">
+                      <div class="forest-itm__wrap">
+                            <p class="forest-itm__qw">1 квартал</p>
+                        <h3 class="forest-itm__name"><span>Лесной </span>квартал</h3>
+                         <img class="forest-itm__photo" src="../assets/img/forest3.png" alt="slide 1">
+                         <p class="forest-itm__desck">Лесной квартал примыкает к лесопарковой зоне, благодаря чему вы сможете круглый год отдыхать на природе, наслаждаться семейными прогулками на свежем воздухе и заниматься спортом. Здесь будут обустроены беговые дорожки и лыжные трассы, лектории для детей и уютные зоны для пикников.</p>
+                      </div>
+                        <a class="forest-itm__link" >Здесь будут обустроены: <img src="../assets/img/r.svg" alt="open"></a>
+                        <div class="forest-sdr">
+                            <no-ssr>
+                            <carousel class="forest-mob__carousel" :items="3" :nav="false" :loop="true" :stagePadding="20">
+                                <div class="forest-sdr__item">
+                                    <img class="advantage-quater__icon" src="../assets/img/running.svg" alt="Спортивные Площадки">
+                                    <p class="advantage-quater__grey">Беговые </p>
+                                    <p class="advantage-quater__blue">Дорожки</p>
+                                </div>
+                            <div class="forest-sdr__item">
+                                <img class="advantage-quater__icon" src="../assets/img/pond.svg" alt="Лыжные Трассы">
+                                <p class="advantage-quater__grey">Каскад </p>
+                                <p class="advantage-quater__blue">Прудов</p>
+                            </div>
+                            <div class="forest-sdr__item">
+                                 <img class="advantage-quater__icon" src="../assets/img/kremlin.svg" alt="Зона для Пикника ">
+                                <p class="advantage-quater__grey">Вид из окна на </p>
+                                <p class="advantage-quater__blue">Столицу</p>
+                            </div>
+                            </carousel>
+                            </no-ssr>
+                        </div>
+                    </div>
+                     <div class="forest-itm">
+                      <div class="forest-itm__wrap">
+                            <p class="forest-itm__qw">2 квартал</p>
+                        <h3 class="forest-itm__name"><span>Водный </span>квартал</h3>
+                         <img class="forest-itm__photo" src="../assets/img/forest2.png" alt="slide 1">
+                         <p class="forest-itm__desck">Водный квартал располагается прямо на берегу реки Юшунка. Изюминкой квартала станет благоустроенная набережная с велодорожками, интерактивными арт-объектами и уютным освещением, благодаря которому здесь можно будет отдыхать не только днем, но и вечером.</p>
+                      </div>
+                        <a class="forest-itm__link" >Здесь будут обустроены: <img src="../assets/img/r.svg" alt="open"></a>
+                        <div class="forest-sdr">
+                            <no-ssr>
+                            <carousel class="forest-mob__carousel" :items="3" :nav="false" :loop="true" :stagePadding="20">
+                                <div class="forest-sdr__item">
+                                    <img class="advantage-quater__icon" src="../assets/img/running.svg" alt="Спортивные Площадки">
+                                    <p class="advantage-quater__grey">Беговые </p>
+                                    <p class="advantage-quater__blue">Дорожки</p>
+                                </div>
+                            <div class="forest-sdr__item">
+                                <img class="advantage-quater__icon" src="../assets/img/pond.svg" alt="Лыжные Трассы">
+                                <p class="advantage-quater__grey">Каскад </p>
+                                <p class="advantage-quater__blue">Прудов</p>
+                            </div>
+                            <div class="forest-sdr__item">
+                                 <img class="advantage-quater__icon" src="../assets/img/kremlin.svg" alt="Зона для Пикника ">
+                                <p class="advantage-quater__grey">Вид из окна на </p>
+                                <p class="advantage-quater__blue">Столицу</p>
+                            </div>
+                            </carousel>
+                            </no-ssr>
+                        </div>
+                    </div>
+                    <div class="forest-itm">
+                      <div class="forest-itm__wrap">
+                            <p class="forest-itm__qw">3 квартал</p>
+                        <h3 class="forest-itm__name"><span>Городской </span>квартал</h3>
+                         <img class="forest-itm__photo" src="../assets/img/forest3.png" alt="slide 1">
+                         <p class="forest-itm__desck">Городской квартал выполнен в очень динамичном стиле. Из окон домов отрываются прекрасные панорамные виды на столицу. При этом квартал совсем не теряет в экологичности рядом находится Юго-восточный лесопарк с его каскадом прудов., редкими растениями и животными, что также наполняет комплекс чистым воздухом и приближает его к природе.</p>
+                      </div>
+                        <a class="forest-itm__link" >Здесь будут обустроены: <img src="../assets/img/r.svg" alt="open"></a>
+                        <div class="forest-sdr">
+                            <no-ssr>
+                            <carousel class="forest-mob__carousel" :items="3" :nav="false" :loop="true" :stagePadding="20">
+                                <div class="forest-sdr__item">
+                                    <img class="advantage-quater__icon" src="../assets/img/running.svg" alt="Спортивные Площадки">
+                                    <p class="advantage-quater__grey">Беговые </p>
+                                    <p class="advantage-quater__blue">Дорожки</p>
+                                </div>
+                            <div class="forest-sdr__item">
+                                <img class="advantage-quater__icon" src="../assets/img/pond.svg" alt="Лыжные Трассы">
+                                <p class="advantage-quater__grey">Каскад </p>
+                                <p class="advantage-quater__blue">Прудов</p>
+                            </div>
+                            <div class="forest-sdr__item">
+                                 <img class="advantage-quater__icon" src="../assets/img/kremlin.svg" alt="Зона для Пикника ">
+                                <p class="advantage-quater__grey">Вид из окна на </p>
+                                <p class="advantage-quater__blue">Столицу</p>
+                            </div>
+                            </carousel>
+                            </no-ssr>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </template>
 <script>
+export default {
+     data: {
+    active: false
+  }
+}
 </script>
 <style lang="scss">
     ._container{
@@ -161,10 +258,116 @@
             width: 92%;
         }
     }
+     .big{
+            display: none;
+        }
+    .forest-mobile{
+        display: none;
+        @media screen and (max-width: 560px){
+            display: block;
+        }
+       
+        .forest-mob__carousel{
+               margin-left: auto;
+                width: 95%;
+                margin-top: 30px;
+            .forest-sdr__item{
+                background: #fff;
+                max-width: 122px;
+                padding: 15px;
+                margin: 0 16px 0px 0px;
+            }
+             .owl-stage {
+                right: 20px;
+            }
+        }
+        .forest-itm {
+        &__wrap{
+            margin: 0 auto;
+            width: 90%;
+        }
+		// .forest-itm__qw
+
+		&__qw {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #0B315E;
+            margin-bottom: 15px;
+		}
+
+		// .forest-itm__name
+
+		&__name {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 120%;
+            letter-spacing: -0.03em;
+            color: #0B315E;
+            margin-bottom: 20px;
+            span{
+                color: #6544FB;
+            }
+		}
+
+		// .forest-itm__photo
+
+		&__photo {
+            width: 100%;
+            margin-bottom: 15px;
+		}
+
+		// .forest-itm__desck
+
+		&__desck {
+            font-size: 16px;
+            line-height: 145%;
+            letter-spacing: -0.03em;
+            color: #0B315E;
+            margin-bottom: 20px;
+		}
+
+		// .forest-itm__link
+
+		&__link {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 170%;
+            color: #0B315E;
+            text-decoration: none;
+            background: #F2F9FF;
+            padding: 20px;
+		}
+}
+
+    }
 .forest{
     background: #F9F9F9;
     .forest-carousel{
         position: relative;
+        @media screen and (max-width: 960px){
+            display: none;
+        }
+    }
+    .quarter-container{
+      @media screen and (max-width: 560px){
+          margin: 0 auto;
+          width: 100%;
+      }  
+    }
+    .owl-carousel{
+         @media screen and (max-width: 960px){
+             height: auto;
+         }
+    }
+    .owl-carousel .owl-item{
+          @media screen and (max-width: 960px){
+            margin: 0px !important;
+          }
     }
    .prev{
         position: absolute;
@@ -188,7 +391,7 @@
 .quarter {
     padding: 170px 0px 100px;
       @media screen and (max-width: 960px){
-            padding: 100px 0px;
+            padding: 80px 0px;
         }
     .quarter-about {
          font-family: "Geometria-Bold";
@@ -252,10 +455,18 @@
             max-width: 80%;
         }
     }
+    .owl-carousel .owl-item{
+         @media screen and (max-width: 960px){
+           margin: 0px 20px;
+        }
+    }
     .quarter-advantages {
         display: flex;
         justify-content: space-between;
          max-width: 440px;
+        @media screen and (max-width: 560px){
+        display: none;
+    }
     }
     .quarter-advantage {
 
@@ -298,6 +509,7 @@
              width: 100%;
          }
     }
+   
    .owl-stage {
        right: 0px;
     }
@@ -338,6 +550,12 @@
             line-height: 150%;
             letter-spacing: -0.03em;
             color: #E0E0E0;
+             @media screen and (max-width: 1600px){
+                 font-size: 60px;
+             }
+            @media screen and (max-width: 960px){
+                font-size: 48px;
+            }
             span{
                 font-size: 24px;
                 line-height: 110%;
