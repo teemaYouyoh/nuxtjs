@@ -1,13 +1,21 @@
 <template>
   <div class="main-page">
       <Header />
-    <p class="if">gqgqgq</p>
+      <Apartments />
+      <ThreeQuarter />
+      <ForestQuarter />
+      <Coworking />
+      <Infrastructure />
+      <Interior />
   </div>
 </template>
 
 <script>
 import "../assets/styles/index.scss"
-export default {}
+import Coworking from '../components/Coworking.vue'
+import Infrastructure from '../components/Infrastructure.vue'
+export default {
+  components: { Coworking, Infrastructure },}
 </script>
 
 <style>
