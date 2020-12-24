@@ -28,12 +28,45 @@
         </div>
       </div>
     </div>
+    <vs-popup class="holamundo" :active.sync="popupActivo">
+                <div class="feedback">
+                <div class="feedback-header">
+                    <div class="feedback-wrap">
+                        <h3> <span>Обратная</span> связь</h3>
+                    </div>
+                    <form action="#" class="feedback-form" name="feedback-form">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Телефон">
+                        <input type="text" placeholder="Коментарий">
+                        <div class="feedback-agree">
+                            <input type="radio" id="agreement">
+                            <label for="agreement">Я согласен на обработку персональных данных</label>
+                        </div>
+                        <button class="feedback-send" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </vs-popup>
+        <vs-button @click="popupActivo=true" color="primary" type="border">Open Default popup</vs-button>
   </div>
+  
 </template>
 
 <script>
+import Vue from 'vue'
+import { vsButton, vsSelect, vsPopup } from 'vuesax'
+import 'vuesax/dist/vuesax.css'
+
+Vue.use(vsButton)
+Vue.use(vsSelect)
+Vue.use(vsPopup)
 export default {
-name: "Newsletter"
+name: "Newsletter",
+ data(){
+    return {
+      popupActivo:false,
+    }
+  },
 }
 </script>
 

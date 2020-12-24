@@ -15,7 +15,8 @@
     "v-owl-carousel": "^1.0.8",
     "vue-burger-menu": "^2.0.5",
     "vue-owl-carousel2": "^2.0.7",
-    "vue-scrollto": "^2.20.0"
+    "vue-scrollto": "^2.20.0",
+    "vuesax": "^3.12.2"
   },
   "devDependencies": {
     "fibers": "^5.0.0",
