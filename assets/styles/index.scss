@@ -2,7 +2,115 @@
 @import "reset";
 
 
+.d-flex{
+  display: flex;
+}
+
+.jc-center{
+  justify-content: center;
+}
+.jc-sb{
+  justify-content: space-between;
+}
+
+.al-item-center{
+  align-items: center;
+}
+.al-item-fl-st{
+  align-items: flex-start;
+}
+
+.f-direc-column{
+  flex-direction: column;
+}
+
+.f-wrap{
+  flex-wrap: wrap;
+}
+
 
 body{
   font-family: "Geometria";
+}
+._container{
+  max-width: 1410px;
+  margin: 0 auto;
+  //width: 100%;
+  @media screen and (max-width: 1600px){
+    max-width: 85%;
+  }
+}
+
+.full-map{
+  .title-map{
+    max-width: 930px;
+    font-family: "Aver-Medium";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: #0b315e;
+    padding: 215px 0 104px 0;
+    span{
+      color: #6544FB;
+    }
+  }
+}
+
+.map-wrapper{
+  position: relative;
+  .left-top{
+    top: 130px;
+    left: 60px;
+  }
+  .left{
+    top: 50%;
+    left: 60px;
+    transform: translate(0, -50%);
+  }
+  .left-down{
+    bottom: 130px;
+    left: 60px;
+  }
+  .right{
+    right: 60px;
+    top: 130px;
+  }
+  .right-top{
+    right: 60px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .right-down{
+    bottom: 130px;
+    right: 60px;
+  }
+  .map-pointer{
+    position: absolute;
+    background-color: #0B315E;
+    padding: 4.5px 12px;
+    border: 1px solid #0B315E;
+    box-sizing: border-box;
+    border-radius: 3px;
+    .info{
+      padding-left: 10px;
+      .title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 110%;
+        color: #FFFFFF;
+        font-family: 'Montserrat';
+      }
+      .description{
+        font-family: "Geometria";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 110%;
+        padding-top: 6px;
+        color: #FFFFFF;
+      }
+    }
+  }
 }

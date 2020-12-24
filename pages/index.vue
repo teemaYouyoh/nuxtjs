@@ -1,13 +1,18 @@
 <template>
   <div class="main-page">
       <Header />
-    <p class="if">gqgqgq</p>
+      <Map />
+      <Advantages />
+      <Documentation />
+    <Newsletter />
   </div>
 </template>
 
 <script>
 import "../assets/styles/index.scss"
-export default {}
+
+export default {
+}
 </script>
 
 <style>
