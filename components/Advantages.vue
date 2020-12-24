@@ -38,7 +38,7 @@
             <div class="card">
               <span class="title">Квартал</span>
               <span class="text">Собственный современный стадион площадью более 6 000 кв.м с трибунами, беговыми дорожками и футбольным полем.</span>
-              <a href="#" class="details">
+              <a href="#" class="details" @click="popupActivo=true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.75 11.7256H4.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M13.7002 5.70124L19.7502 11.7252L13.7002 17.7502" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -71,16 +71,157 @@
           </div>
       </div>
     </div>
+
+    <vs-popup fullscreen  class="advantage-modal" :active.sync="popupActivo">
+      <div class="kvartal">
+<!--        <vs-icon icon-pack="material-icons" icon="close" class="vs-popup&#45;&#45;close vs-popup&#45;&#45;close&#45;&#45;icon" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></vs-icon>-->
+        <div class="kvartal-wrapper d-flex jc-sb al-item-fl-st">
+          <div class="kvartal-left">
+            <p class="subtitle">подробнее</p>
+            <h5 class="title">Квартал</h5>
+          </div>
+          <div class="kvartal-right">
+            <img src="../assets/img/Modal-kvartal.png" alt="modal-pic" class="kvartal-picture">
+            <div class="info">
+              <p>Территория жилого комплекса Три Квартала создана как полноценное общественное пространство, где можно погулять с детьми, заняться спортом, посидеть с любимой книгой, провести время в кругу друзей. Вы можете найти для себя все необходимое, не покидая своего комплекса.</p>
+              <p>50 ГА благоустроенной территории, которые вмещают в себя образовательные и детские площадки, велосипедные и беговые тропы, зоны для занятия йогой и спортом.</p>
+              <p>Детские площадки на территории ЖК созданы для каждой возрастной группы детей, что позволяет играть без риска маленьким и в то же время не ограничивать потребностей более старших.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </vs-popup>
+
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import { vsButton, vsSelect, vsPopup } from 'vuesax'
+import 'vuesax/dist/vuesax.css'
+import $ from "jquery"
+
+Vue.use(vsButton)
+Vue.use(vsSelect)
+Vue.use(vsPopup)
 export default {
-name: "Advantages"
+  data(){
+    return {
+      popupActivo:false,
+    }
+  },
+  mounted() {
+      $(`.vs-popup--close--icon`).bind('click', () => {
+        this.popupActivo = false;
+      })
+  },
+  name: "Advantages"
 }
 </script>
 
 <style scoped lang="scss">
+.advantage-modal{
+  .con-vs-popup{
+    .vs-popup{
+      max-width: 1920px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+  .kvartal{
+    padding: 114px 140px;
+    @media (max-width: 1200px) {
+      padding: 76px 93px;
+    }
+    @media (max-width: 992px) {
+      padding: 60px 78px;
+    }
+    @media (max-width: 576px) {
+      padding: 30px 39px;
+    }
+    .kvartal-wrapper{
+      @media(max-width: 992px){
+        flex-direction: column;
+      }
+      .kvartal-left{
+        width: 25%;
+        @media(max-width: 1600px){
+          width: 35%;
+        }
+        @media (max-width: 992px) {
+          width: 100%;
+          padding-bottom: 25px;
+        }
+        .subtitle{
+          font-family: "Geometria-Bold";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 150%;
+          text-transform: uppercase;
+          color: #0B315E;
+          padding-bottom: 14px;
+          @media (max-width: 1200px) {
+            font-size: 16px;
+          }
+          @media (max-width: 576px) {
+            padding-bottom: 7px;
+            font-size: 12px;
+          }
+        }
+        .title{
+          font-family: "Aver-Heavy";
+          font-style: normal;
+          font-size: 72px;
+          line-height: 110%;
+          letter-spacing: -0.03em;
+          color: #0B315E;
+          @media (max-width: 1200px) {
+            font-size: 50px;
+          }
+          @media (max-width: 576px) {
+            font-size: 32px;
+          }
+        }
+      }
+      .kvartal-right{
+        width: 70%;
+        @media(max-width: 1600px){
+          width: 60%;
+        }
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+        .kvartal-picture{
+          max-width: 1170px;
+          width: 100%;
+          height: auto;
+          padding-bottom: 62px;
+          @media(max-width: 992px){
+            padding-bottom: 31px;
+          }
+        }
+        .info{
+          p{
+            padding-bottom: 17px;
+            font-family: "Aver";
+            font-style: normal;
+            font-size: 22px;
+            line-height: 170%;
+            letter-spacing: -0.03em;
+            color: #0B315E;
+            @media (max-width: 576px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
   .owl-stage{
       right: 70px;
     }
@@ -187,7 +328,7 @@ name: "Advantages"
         box-shadow: 0px 81px 90px 7px rgba(0, 0, 0, 0.2);
         .details{
           color: #fff;
-          
+
         }
         .card{
           color: #fff;
@@ -287,10 +428,10 @@ name: "Advantages"
    }
   .additional .card:hover .details svg path{
     stroke: #6544FB;
-  } 
+  }
    .additional .card:hover .details span{
      color: #fff;
      padding-bottom: 20px;
    }
-  
+
 </style>
