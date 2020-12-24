@@ -131,7 +131,7 @@
           bottom: -10px;
       }
       .infrastructure-item__info h5{
-              font-family: "Aver-Regular";
+              font-family: "Aver-Demi";
       }
       .info-infrastructure img{
           max-width: 12px;

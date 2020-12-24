@@ -186,6 +186,7 @@
 
 		&__price {
             font-family: "Aver-Demi";
+
             font-weight: 800;
             font-size: 72px;
             line-height: 110%;

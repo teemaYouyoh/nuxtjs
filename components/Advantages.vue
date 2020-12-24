@@ -252,6 +252,7 @@ export default {
         }
         .title{
         font-family: "Aver-Demi";
+
           font-style: normal;
           font-size: 72px;
           line-height: 110%;

@@ -207,6 +207,7 @@ name: "Documentation"
     }
     .documents-title{
       font-family: "Aver-Demi";
+
       font-style: normal;
       font-weight: 900;
       font-size: 72px;
