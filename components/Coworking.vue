@@ -248,7 +248,7 @@ export default {
             letter-spacing: -0.03em;
             color: #0B315E;
             max-width: 800px;
-           font-family: "Aver-Regular";
+           font-family: "Aver-Demi";
             margin-bottom: 30px;
             @media screen and (max-width: 1600px){
                 font-size: 60px;

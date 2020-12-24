@@ -115,7 +115,7 @@
      .infrastructure-item{
         @media screen and (max-width: 560px){
             width: 95%;
-        } 
+        }
      }
     }
 }
@@ -145,7 +145,7 @@
     display: none;
     @media screen and (max-width: 560px){
         display: block;
-    }   
+    }
 }
 .owl-theme .owl-nav{
     display: none;
@@ -164,7 +164,7 @@
     letter-spacing: -0.03em;
     color: #0B315E;
     max-width: 800px;
-    font-family: "Aver-Regular";
+    font-family: "Aver-Demi";
     margin-bottom: 60px;
     @media screen and (max-width: 1600px){
         font-size: 60px;

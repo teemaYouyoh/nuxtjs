@@ -71,7 +71,7 @@
     line-height: 120%;
     letter-spacing: -0.03em;
     color: #0B315E;
-    font-family: "Aver-Regular";
+    font-family: "Aver-Demi";
     margin-bottom: 30px;
     max-width: 800px;
     @media screen and (max-width: 1600px){
@@ -112,7 +112,7 @@
                     bottom: -50px;
                 }
             }
-    } 
+    }
     .next{
           position: absolute;
             bottom: -50px;

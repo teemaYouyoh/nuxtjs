@@ -134,7 +134,7 @@ name: "Newsletter",
         }
 
       .info{
-        font-family: "Aver-Medium";
+        font-family: "Aver-Demi";
         font-style: normal;
         font-weight: 800;
         font-size: 72px;
