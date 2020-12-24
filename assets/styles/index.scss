@@ -42,6 +42,9 @@ body{
 }
 
 .full-map{
+  @media(max-width: 576px){
+    padding-bottom: 72px;
+  }
   .title-map{
     max-width: 930px;
    font-family: "Aver-Regular";
@@ -56,39 +59,113 @@ body{
       font-size: 60px;
       padding: 150px 0px 100px;
   }
+    @media(max-width: 992px){
+      font-size: 48px;
+      padding: 120px 0 72px;
+    }
+    @media(max-width: 576px){
+      display: none;
+    }
     span{
       color: #6544FB;
+    }
+  }
+  .subtitle-map-media{
+    display: none;
+    font-family: "Geometria-Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: left;
+    /* Темный */
+    color: #0B315E;
+    @media (max-width: 576px) {
+      display: block;
+      padding: 85px 0 13px 0;
+
+    }
+  }
+  .title-map-media{
+    font-family: "Aver-Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: left;
+    display: none;
+    /* or 43px */
+    letter-spacing: -0.03em;
+
+    /* Темный */
+    color: #0B315E;
+    @media (max-width: 576px) {
+      display: block;
+      padding-bottom: 32px;
     }
   }
 }
 
 .map-wrapper{
   position: relative;
+  #my-map{
+   @media(max-width: 992px){
+     height: 600px;
+   }
+    @media (max-width: 768px) {
+      height: 500px;
+    }
+    @media (max-width: 576px) {
+      height: 315px;
+      width: 85%;
+      display: flex;
+      margin: auto;
+    }
+  }
   .left-top{
     top: 130px;
     left: 60px;
+    @media(max-width: 992px){
+      left: 30px;
+    }
   }
   .left{
     top: 50%;
     left: 60px;
     transform: translate(0, -50%);
+    @media(max-width: 992px){
+      left: 30px;
+    }
   }
   .left-down{
     bottom: 130px;
     left: 60px;
+    @media(max-width: 992px){
+      left: 30px;
+    }
   }
   .right{
     right: 60px;
     top: 130px;
+    @media(max-width: 992px){
+      right: 30px;
+    }
   }
   .right-top{
     right: 60px;
     top: 50%;
     transform: translate(0, -50%);
+    @media(max-width: 992px){
+      right: 30px;
+    }
   }
   .right-down{
     bottom: 130px;
     right: 60px;
+    @media(max-width: 992px){
+      right: 30px;
+    }
   }
   .map-pointer{
     position: absolute;
@@ -97,6 +174,9 @@ body{
     border: 1px solid #0B315E;
     box-sizing: border-box;
     border-radius: 3px;
+    @media(max-width: 768px){
+      display: none;
+    }
     .info{
       padding-left: 10px;
       .title{

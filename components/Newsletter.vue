@@ -20,8 +20,10 @@
               </svg>
             </button>
           </div>
+          <button class="subscribe-btn">Подписаться на рассылку</button>
           <a href="#" class="left-request">Оставить заявку</a>
           <p class="question-answers">Остались вопросы, звоните?</p>
+          <p class="question-answers_media">Остались вопросы?</p>
           <a href="tel:+88005005005" class="phone-number">8 800 500 500 5</a>
         </div>
       </div>
@@ -48,14 +50,30 @@ name: "Newsletter"
       background: #6544FB;
       border: none;
       cursor: pointer;
+      @media(max-width: 768px){
+        right: 50px;
+        width: 50px;
+        height: 50px;
+      }
       svg{
         width: 40px;
         height: 40px;
+        @media (max-width: 768px) {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
     .newsletter-wrapper{
       padding-top: 176px;
       padding-bottom: 137px;
+      @media(max-width: 768px){
+        padding-top: 117px;
+        padding-bottom: 91px;
+      }
+      @media (max-width: 576px) {
+        align-items: flex-start;
+      }
 
       .title{
         font-family: "Geometria-Bold";
@@ -66,13 +84,19 @@ name: "Newsletter"
         display: flex;
         align-items: center;
         color: #0B315E;
+        @media(max-width: 576px){
+          font-size: 16px;
+        }
       }
       .wrapper-for-bg{
         background: url("../assets/img/newsletters.png") center no-repeat;
         background-size: cover;
+        @media (max-width: 768px) {
+          background: transparent;
+        }
 
       .info{
-        font-family: "Aver-Regular";
+        font-family: "Aver-Medium";
         font-style: normal;
         font-weight: 800;
         font-size: 72px;
@@ -81,9 +105,17 @@ name: "Newsletter"
         letter-spacing: -0.03em;
         max-width: 1025px;
         color: #0B315E;
-        margin: 32px 0px;
+        margin: 32px 0;
         @media screen and (max-width: 1600px){
            font-size: 60px;
+        }
+        @media (max-width: 768px){
+          font-size: 42px;
+        }
+        @media(max-width: 576px){
+          font-size: 36px;
+          margin: 12px 0;
+          text-align: left;
         }
         span{
           color: #6544FB;
@@ -92,6 +124,13 @@ name: "Newsletter"
       .input-wrapper{
         position: relative;
         margin-bottom: 47px;
+        @media (max-width: 992px) {
+          margin-bottom: 32px;
+        }
+        @media (max-width: 576px) {
+          width: 100%;
+          margin-bottom: 12px;
+        }
         input{
           border: 1px solid #6544FB;
           box-sizing: border-box;
@@ -105,12 +144,11 @@ name: "Newsletter"
           font-weight: normal;
           font-size: 16px;
           line-height: 150%;
-
-          /* identical to box height, or 24px */
           letter-spacing: -0.03em;
-
-          /* Темный */
           color: #0B315E;
+          @media (max-width: 576px) {
+            width: 100%;
+          }
         }
         .send-email{
           position: absolute;
@@ -125,7 +163,37 @@ name: "Newsletter"
           cursor: pointer;
         }
       }
-      .left-request{
+        .subscribe-btn{
+          display: none;
+          @media (max-width: 576px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            font-family: "Aver-Bold";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 110%;
+            background: #6544FB;
+
+            /* Основной */
+            border: 1px solid #6544FB;
+            box-sizing: border-box;
+            border-radius: 10px;
+            /* or 13px */
+            text-align: right;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+
+            /* Белый */
+            color: #FFFFFF;
+          }
+        }
+
+      .left-request
+      {
         font-family: "Aver-Bold";
         font-style: normal;
         font-weight: 800;
@@ -138,8 +206,13 @@ name: "Newsletter"
         text-transform: uppercase;
         text-decoration: none;
         color: #6544FB;
+        @media (max-width: 576px) {
+          display: none;
+        }
       }
-      .question-answers{
+
+      .question-answers,
+      .question-answers_media{
         padding-top: 54px;
         font-family: "Aver-Regular";
         font-style: normal;
@@ -152,7 +225,21 @@ name: "Newsletter"
 
         /* Темный */
         color: #0B315E;
+        @media(max-width: 576px){
+          display: block;
+          padding-top: 23px !important;
+          text-align: left;
+          width: 100%;
+        }
       }
+        question-answers_media{
+          display: none;
+        }
+        .question-answers{
+          @media(max-width: 576px){
+            display: none;
+          }
+        }
       .phone-number{
         font-family: "Aver-Bold";
         font-style: normal;
@@ -164,6 +251,10 @@ name: "Newsletter"
         /* Темный */
         text-decoration: none;
         color: #0B315E;
+        @media (max-width: 576px) {
+          text-align: left;
+          width: 100%;
+        }
       }
     }
     }
