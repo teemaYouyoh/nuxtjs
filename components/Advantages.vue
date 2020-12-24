@@ -206,7 +206,7 @@ export default {
         .info{
           p{
             padding-bottom: 17px;
-            font-family: "Aver";
+             font-family: "Aver-Regular";
             font-style: normal;
             font-size: 22px;
             line-height: 170%;
