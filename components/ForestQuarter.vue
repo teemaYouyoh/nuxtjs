@@ -251,19 +251,22 @@ export default {
             max-width: 85%;
         }
     }
+    .forest-slide{
+        padding: 0px 0px 0px 100px;
+    }
     .quarter-container{
         margin-left: auto;
-        width: 87%;
-        @media screen and (max-width: 1600px){
-            width: 92%;
-        }
+        width: 100%;
+        // @media screen and (max-width: 1600px){
+        //     width: 92%;
+        // }
     }
      .big{
             display: none;
         }
     .forest-mobile{
         display: none;
-        @media screen and (max-width: 560px){
+        @media screen and (max-width: 960px){
             display: block;
         }
        

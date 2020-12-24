@@ -1,7 +1,8 @@
 <template>
     <div id="about" class="quarter quarter-three">
         <div class="quarter-container">
-           <p class="quarter-about">О КВАРТАЛЕ</p>
+            <div class="quar-wr">
+                  <p class="quarter-about">О КВАРТАЛЕ</p>
            <h2 class="quarter-header"><span>Три Квартала</span> – жилой квартал нового формата. </h2>
            <div class="quarter-wrapper">
                <div class="quarter-left">
@@ -48,6 +49,7 @@
                     </no-ssr>
                </div>
            </div>
+            </div>
         </div>
     </div>
 </template>
@@ -66,6 +68,15 @@
         width: 87%;
         @media screen and (max-width: 1600px){
             width: 92%;
+        }
+        .quar-wr{
+            padding: 0px 0px 0px 100px;
+            @media screen and (max-width: 960px){
+                padding: 0px 0px 0px 50px;
+            }
+             @media screen and (max-width: 560px){
+                padding: 0px 0px 0px 25px;
+            }
         }
     }
     .quarter-three{

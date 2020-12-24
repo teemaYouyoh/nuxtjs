@@ -46,6 +46,18 @@
 <script>
 </script>
 <style lang="scss">
+    .coworking-slide{
+        padding-left: 150px;
+        @media screen and (max-width: 1600px){
+            padding-left: 100px;
+        }
+         @media screen and (max-width: 960px){
+            padding-left: 50px;
+        }
+         @media screen and (max-width: 560px){
+            padding-left: 25px;
+        }
+    }
     .сoworking-carousel{
         position: relative;
     }
@@ -88,10 +100,10 @@
         }
        .coworking-container {
               margin-left: auto;
-                width: 87%;
-                @media screen and (max-width: 1600px){
-                    width: 92%;
-                }
+                width: 100%;
+                // @media screen and (max-width: 1600px){
+                //     width: 92%;
+                // }
         }
         .coworking-header {
             font-weight: 800;
