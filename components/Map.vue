@@ -1,7 +1,9 @@
 <template>
-  <div class="full-map">
+  <div id="location" class="full-map">
     <div class="_container">
       <h2 class="title-map"><span>Локация</span> – мы находимся рядом с МКАД.</h2>
+      <p class="subtitle-map-media">Локация</p>
+      <h2 class="title-map-media">Мы находимся рядом с МКАД.</h2>
     </div>
     <div class="map-wrapper">
       <div class="map-pointer left-top d-flex jc-sb al-item-fl-st">
@@ -58,7 +60,7 @@
           <p class="title">Каширское шоссе</p>
         </div>
       </div>
-      <iframe src="https://snazzymaps.com/embed/281503" width="100%" height="676px" style="border:none;"></iframe>
+      <iframe id="my-map" src="https://snazzymaps.com/embed/281503" width="100%" height="676px" style="border:none;"></iframe>
     </div>
   </div>
 </template>

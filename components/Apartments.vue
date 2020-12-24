@@ -45,7 +45,7 @@
         background: rgba(249, 249, 249, 0.98) url(../assets/img/bg-mob.png) no-repeat bottom right;
         background-size: cover;
      }
-    
+
     .apartments-slider {
       position: absolute;
         top: 50%;
@@ -97,7 +97,7 @@
                 }
                 img{
                     margin-bottom: 15px;
-                }   
+                }
                 h4{
                     font-weight: 800;
                     font-size: 48px;
@@ -147,7 +147,7 @@
         }
     }
 }
-		
+
 
     ._container{
         max-width: 73%;

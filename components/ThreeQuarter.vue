@@ -1,5 +1,5 @@
 <template>
-    <div class="quarter quarter-three">
+    <div id="about" class="quarter quarter-three">
         <div class="quarter-container">
            <p class="quarter-about">О КВАРТАЛЕ</p>
            <h2 class="quarter-header"><span>Три Квартала</span> – жилой квартал нового формата. </h2>
@@ -264,7 +264,7 @@
                     height: 50px;
                 }
             }
-            
+
      }
     .quarter-right .prev,
     .quarter-right .next{

@@ -81,6 +81,16 @@ name: "Documentation"
       color: #0B315E;
       padding-top: 165px;
       padding-bottom: 32px;
+      @media(max-width: 1200px){
+        padding-top: 110px;
+      }
+      @media (max-width: 768px) {
+        padding-top: 80px;
+      }
+      @media (max-width: 576px) {
+        padding-top: 72px;
+        padding-bottom: 13px;
+      }
     }
     .documents-title{
       font-family: "Aver-Regular";
@@ -95,9 +105,24 @@ name: "Documentation"
         font-size: 60px;
         padding-bottom: 150px;
       }
+      @media(max-width: 1200px){
+        padding-bottom: 90px;
+      }
+      @media(max-width: 768px){
+        font-size: 40px;
+        padding-bottom: 60px;
+        font-family: "Aver-Medium";
+      }
+      @media(max-width: 576px){
+        font-size: 36px;
+        padding-bottom: 42px;
+      }
     }
     .documents-wrapper{
       padding-bottom: 108px;
+      @media(max-width: 576px){
+        padding-bottom: 54px;
+      }
       .card:hover{
         background: #6544FB;
         transition: 0.5s;
@@ -109,7 +134,17 @@ name: "Documentation"
         width: 23%;
         cursor: pointer;
         box-shadow: 0px 60px 90px rgba(0, 0, 0, 0.2);
+        @media(max-width: 1200px){
+          width: 48%;
+          margin-top: 20px;
+        }
+        @media(max-width: 768px){
+          width: 100%;
+        }
         .card-img{
+          @media(max-width: 576px){
+            float: right;
+          }
           svg{
             display: block;
             margin-left: auto;
@@ -126,6 +161,10 @@ name: "Documentation"
           margin-bottom: 21px;
           /* Темный */
           color: #0B315E;
+          @media (max-width: 576px) {
+            width: 50%;
+            margin-top: 0;
+          }
         }
         .card-info{
           font-family: "Geometria";

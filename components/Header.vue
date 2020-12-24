@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div id="header" class="header">
         <div class="header-container _container">
             <div class="header-wrap">
                   <div class="header-logo">
@@ -11,12 +11,12 @@
            <div class="header-menu header-menu__desktop">
                <nav>
                    <ul>
-                       <li><a class="header-menu__current" href="#">о квартале</a></li>
-                       <li><a href="#">Кварталы</a></li>
-                       <li><a href="#">локация</a></li>
-                       <li><a href="#">Преимущества</a></li>
-                       <li><a href="#">инфраструктура</a></li>
-                       <li><a href="#">контакты</a></li>
+                       <li><a class="header-menu__current scrollto" href="#about">о квартале</a></li>
+                       <li><a href="#apartments" class="scrollto">Кварталы</a></li>
+                       <li><a href="#location" class="scrollto">локация</a></li>
+                       <li><a href="#advantages" class="scrollto">Преимущества</a></li>
+                       <li><a href="#infrastructure" class="scrollto">инфраструктура</a></li>
+                       <li><a href="#contacts" class="scrollto">контакты</a></li>
                    </ul>
                </nav>
            </div>
@@ -59,7 +59,7 @@
                                 <a href="#">
                                     <img src="../assets/img/insta.svg" alt="instagram">
                                 </a>
-                            </div> 
+                            </div>
                         </li>
                     </ul>
                     </div>
@@ -68,6 +68,56 @@
         </div>
     </div>
 </template>
+
+<script>
+import $ from "jquery";
+
+export default {
+  mounted() {
+    $(document).ready(function() {
+      $(".scrollto").click(function() {
+        let elementClick = $(this).attr("href")
+        $("body,html").animate(
+          {
+            scrollTop: $(elementClick).offset().top
+          },
+          800 //speed
+        );
+      });
+      $("#btn-up").click(function (){
+        $("body,html").animate(
+          {
+            scrollTop: $("#header").offset().top
+          },
+          800 //speed
+        );
+      })
+    });
+  }
+}
+
+</script>
+<!--<script>-->
+<!--var Vue = require('vue');-->
+<!--var VueScrollTo = require('vue-scrollto');-->
+<!--Vue.use(VueScrollTo)-->
+
+<!--// You can also pass in the default options-->
+<!--Vue.use(VueScrollTo, {-->
+<!--  container: "body",-->
+<!--  duration: 500,-->
+<!--  easing: "ease",-->
+<!--  offset: 0,-->
+<!--  force: true,-->
+<!--  cancelable: true,-->
+<!--  onStart: false,-->
+<!--  onDone: false,-->
+<!--  onCancel: false,-->
+<!--  x: false,-->
+<!--  y: true-->
+<!--})-->
+<!--// </script>-->
+
 <style lang="scss">
     ._container{
         max-width: 73%;
@@ -98,7 +148,7 @@
         }
         .header-logo {
                 max-width: 160px;
-                width: 100%; 
+                width: 100%;
                 display: none;
             @media screen and (max-width: 1600px){
                margin-right: 30px;
@@ -120,7 +170,7 @@
                     align-items: center;
                     letter-spacing: -0.03em;
                     color: #0B315E;
-                     
+
                 }
             }
         }
@@ -207,8 +257,8 @@
      opacity: 0;
     }
     .menu__btn {
-        display: flex; 
-        align-items: center;  
+        display: flex;
+        align-items: center;
         position: fixed;
         top: 18px;
         right: 20px;

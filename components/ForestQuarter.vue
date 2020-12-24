@@ -1,5 +1,5 @@
 <template>
-    <div class="quarter forest">
+    <div id="apartments" class="quarter forest">
         <div class="quarter-container">
                <no-ssr>
                     <carousel class="forest-carousel" :items="1" :nav="false" :loop="true">
@@ -90,7 +90,7 @@
                         <div class="quarter-wrapper">
                             <div class="quarter-left">
                                     <p class="quarter-info">
-                                        Городской квартал» выполнен в очень динамичном стиле. Из окон домов отрываются прекрасные панорамные виды на столицу. 
+                                        Городской квартал» выполнен в очень динамичном стиле. Из окон домов отрываются прекрасные панорамные виды на столицу.
                                     </p>
                                     <p class="quarter-info quarter-info__second">
                                        При этом квартал совсем не теряет в экологичности – рядом находится Юго-восточный лесопарк с его каскадом прудов., редкими растениями и животными, что также наполняет комплекс чистым воздухом и приближает его к природе.
@@ -566,8 +566,8 @@ export default {
             }
         }
     }
-     
-  
+
+
 }
   .quarter .owl-carousel .owl-item img {
     width: 100%;

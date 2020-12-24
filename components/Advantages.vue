@@ -1,5 +1,5 @@
 <template>
-  <div class="advantages">
+  <div id="advantages" class="advantages">
     <div class="_container">
       <div class="advantages_wrapper d-flex jc-sb">
         <div class="left d-flex f-direc-column">
