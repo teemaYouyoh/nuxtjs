@@ -1,5 +1,5 @@
 <template>
-    <div class="infrastructure">
+    <div id="infrastructure" class="infrastructure">
         <div class="infrastructure-container _container">
              <h3 class="infrastructure-header">Инфраструктура комплекса</h3>
              <div class="infrastructure-wrapper">
