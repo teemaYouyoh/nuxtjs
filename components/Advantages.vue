@@ -61,12 +61,18 @@ name: "Advantages"
 <style scoped lang="scss">
   .advantages{
     background: #6544FB;
+    @media screen and (max-width: 960px){
+      background: #fff;
+    }
     //padding-top: 205px;
     .advantages_wrapper{
       //max-height: 800px;
       .left{
         transform: translate(0, 292px);
         width: 48%;
+        @media screen and (max-width: 960px){
+          transform: unset;
+        }
         .title{
         font-family: "Aver-Regular";
           font-style: normal;
@@ -75,9 +81,17 @@ name: "Advantages"
           letter-spacing: -0.03em;
           color: #FFFFFF;
           padding-bottom: 150px;
+          font-weight: 700;
           @media screen and (max-width: 1600px){
             font-size: 60px;
           }
+           @media screen and (max-width: 960px){
+                font-size: 48px;
+                color: #0B315E;
+            }
+          @media screen and (max-width: 768px){
+                font-size: 36px;
+            }
         }
         .subtitle{
           font-family: "Geometria-Bold";
@@ -88,6 +102,10 @@ name: "Advantages"
           align-items: center;
           letter-spacing: -0.03em;
           color: #FFFFFF;
+           @media screen and (max-width: 960px){
+                color: #0B315E;
+                padding-top: 100px;
+            }
         }
       }
       .right{
@@ -101,6 +119,9 @@ name: "Advantages"
   .advantages-pic{
     height: auto;
     width: 100%;
+    @media screen and (max-width: 960px){
+      display: none;
+    }
   }
 
 
