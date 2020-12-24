@@ -3,7 +3,7 @@
         <div class="coworking-container">
              <no-ssr>
                 <carousel class="сoworking-carousel" :items="1" :nav="false" :loop="true" :responsive="{0:{stagePadding:0},560:{stagePadding:70}}">
-                    <div class="coworking-slide">
+                    <div class="coworking-slide" @click="popupActivo=true">
                         <h3 class="coworking-header"><span>Coworking</span>не отходяот дома.</h3>
                         <div class="coworking-photo">
                             <img src="../assets/img/cow1.png" alt="slide 1">
@@ -41,11 +41,147 @@
                 </carousel>
              </no-ssr>
         </div>
+
+      <vs-popup fullscreen  class="advantage-modal" :active.sync="popupActivo">
+        <div class="kvartal">
+          <!--        <vs-icon icon-pack="material-icons" icon="close" class="vs-popup&#45;&#45;close vs-popup&#45;&#45;close&#45;&#45;icon" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></vs-icon>-->
+          <div class="kvartal-wrapper d-flex jc-sb al-item-fl-st">
+            <div class="kvartal-left">
+              <p class="subtitle">подробнее</p>
+              <h5 class="title">Каворкинг</h5>
+            </div>
+            <div class="kvartal-right">
+              <img src="../assets/img/Modal-kvartal.png" alt="modal-pic" class="kvartal-picture">
+              <div class="info">
+                <p>Зона коворкинга будет располагаться на территории нашего жилого комплекса. В нем жильцы могут спокойно поработать или провести деловую встречу.</p>
+                <p>Коворкинг вмещает в себя Комфортные рабочие места и кабинеты, чтобы сосредоточиться на своем проекте. Пространство с диванами и пуфами, где приятно поработать и провести встречу. При желании здесь можно организовать презентацию или просмотр фильма.</p>
+                <p>А также в летнее время будет открыта просторная веранда -кроны деревьев над головой, быстрый Wi-Fi и розетки.</p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </vs-popup>
     </div>
 </template>
 <script>
+import Vue from 'vue'
+import { vsButton, vsSelect, vsPopup } from 'vuesax'
+import 'vuesax/dist/vuesax.css'
+import $ from "jquery"
+
+Vue.use(vsButton)
+Vue.use(vsSelect)
+Vue.use(vsPopup)
+export default {
+  data() {
+    return {
+      popupActivo: false,
+    }
+  },
+  mounted() {
+    $(`.vs-popup--close--icon`).bind('click', () => {
+      this.popupActivo = false;
+    })
+  },
+}
 </script>
 <style lang="scss">
+
+.kvartal{
+  padding: 114px 140px;
+  @media (max-width: 1200px) {
+    padding: 76px 93px;
+  }
+  @media (max-width: 992px) {
+    padding: 60px 78px;
+  }
+  @media (max-width: 576px) {
+    padding: 30px 39px;
+  }
+  .kvartal-wrapper{
+    @media(max-width: 992px){
+      flex-direction: column;
+    }
+    .kvartal-left{
+      width: 25%;
+      @media(max-width: 1600px){
+        width: 35%;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+        padding-bottom: 25px;
+      }
+      .subtitle{
+        font-family: "Geometria-Bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #0B315E;
+        padding-bottom: 14px;
+        @media (max-width: 1200px) {
+          font-size: 16px;
+        }
+        @media (max-width: 576px) {
+          padding-bottom: 7px;
+          font-size: 12px;
+        }
+      }
+      .title{
+        font-family: "Aver-Heavy";
+        font-style: normal;
+        font-size: 72px;
+        line-height: 110%;
+        letter-spacing: -0.03em;
+        color: #0B315E;
+        @media (max-width: 1200px) {
+          font-size: 50px;
+        }
+        @media (max-width: 576px) {
+          font-size: 32px;
+        }
+      }
+    }
+    .kvartal-right{
+      width: 70%;
+      @media(max-width: 1600px){
+        width: 60%;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      .kvartal-picture{
+        max-width: 1170px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 62px;
+        @media(max-width: 992px){
+          padding-bottom: 31px;
+        }
+      }
+      .info{
+        p{
+          padding-bottom: 17px;
+          font-family: "Aver";
+          font-style: normal;
+          font-size: 22px;
+          line-height: 170%;
+          letter-spacing: -0.03em;
+          color: #0B315E;
+          @media (max-width: 576px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
     .coworking-slide{
         padding-left: 150px;
         @media screen and (max-width: 1600px){

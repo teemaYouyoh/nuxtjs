@@ -1,6 +1,6 @@
 <template>
   <div id="contacts" class="newsletter">
-    <button id="btn-up" class="btn-up">
+    <button id="btn-up" class="btn-up-news">
       <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.75 17.8125V4.6875" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M5.1875 11.25L11.75 4.6875L18.3125 11.25" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -61,7 +61,7 @@
            </div>
     </vs-popup>
   </div>
-  
+
 </template>
 
 <script>
@@ -91,7 +91,7 @@ name: "Newsletter",
     @media screen and (max-width: 560px){
       background: #fff;
     }
-    .btn-up{
+    .btn-up-news{
       position: absolute;
       bottom: 0;
       right: 100px;
