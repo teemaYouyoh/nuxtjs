@@ -88,4 +88,14 @@ export default {
         width: 100% !important;
         border-radius: 8px !important;
     }
+    
+  .vs-input--input{
+    border: none !important;
+    border-radius: 0px !important;
+    width: 100% !important;
+    border-bottom: 1px solid #BDBDBD !important;
+  }
+  .feedback-form .vs-button--text{
+    width: 80% !important;
+  }
 </style>

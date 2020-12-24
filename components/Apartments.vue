@@ -36,8 +36,8 @@
 .apartments {
    position: relative;
     background: rgba(249, 249, 249, 0.98) url(../assets/img/appartment.png) no-repeat bottom right;
-    background-size: 62%;
-    padding: 0px 0px 250px;
+    background-size: 61%;
+    padding: 0px 0px 336px;
      @media screen and (max-width: 1600px){
          padding-bottom: 150px;
      }
@@ -48,8 +48,8 @@
 
     .apartments-slider {
       position: absolute;
-        top: 50%;
-        left: 2%;
+        top: 41%;
+        left: 4%;
         transform: translate(50%, -50%);
          @media screen and (max-width: 1600px){
            left: 0%;
@@ -71,14 +71,14 @@
             display: flex;
             position: absolute;
             bottom: 0px;
-            left: 55.8%;
+            left: 56%;
             transform: translate(-50%, 0%);
             @media screen and (max-width: 560px){
                 left: 50%;
             }
             &__green{
                 background: #00BA88;
-                margin-right: 20px;
+                margin-right: 11px;
                 @media screen and (max-width: 560px){
                     margin-right: 0px;
                 }
@@ -157,7 +157,7 @@
         }
     }
 .apartments-info {
-    padding-top: 250px;
+    padding-top: 188px;
     @media screen and (max-width: 1600px){
          padding-top: 130px;
     }
@@ -192,7 +192,7 @@
             letter-spacing: -0.03em;
             color: #0B315E;
             max-width: 650px;
-            margin-bottom: 50px;
+            margin-bottom: 43px;
             @media screen and (max-width: 1600px){
                font-size: 60px;
                max-width: 550px;
@@ -217,7 +217,7 @@
             letter-spacing: -0.03em;
             color: #14142B;
              font-family: "Geometria-Medium", sans-serif;
-             margin-bottom: 20px;
+             margin-bottom: 13px;
             @media screen and (max-width: 768px){
                 font-size: 18px;
                 line-height: 150%;
