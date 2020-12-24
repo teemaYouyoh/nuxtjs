@@ -7,15 +7,17 @@
       <Coworking />
       <Infrastructure />
       <Interior />
+      <Footer />
   </div>
 </template>
 
 <script>
 import "../assets/styles/index.scss"
 import Coworking from '../components/Coworking.vue'
+import Footer from '../components/Footer.vue'
 import Infrastructure from '../components/Infrastructure.vue'
 export default {
-  components: { Coworking, Infrastructure },}
+  components: { Coworking, Infrastructure, Footer },}
 </script>
 
 <style>
