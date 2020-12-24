@@ -73,11 +73,26 @@
             width: 98% !important;
             max-height: 540px !important;
             @media screen and (max-width: 1600px){
-            max-height: 470px !important;
+                  max-height: 470px !important;
+            }
+            @media screen and (max-width: 1270px){
+              max-height: 380px !important;
+            }
+            @media screen and (max-width: 960px){
+              max-height: unset !important;
+              width: 100% !important;
+            }
+            .owl-carousel .owl-item {
+                 @media screen and (max-width: 960px){
+                    margin: 0px 12px;
+                 }
             }
         }
          .owl-stage {
             right: 150px !important;
+            @media screen and (max-width: 960px){
+              right: 200px !important;
+            }
         }
     }
 .quarter {
@@ -91,6 +106,10 @@
         letter-spacing: -0.03em;
         color: #0B315E;
         margin-bottom: 20px;
+        @media screen and (max-width: 960px){
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
     }
     .quarter-header {
         font-weight: 600;
@@ -104,15 +123,36 @@
        @media screen and (max-width: 1600px){
             font-size: 60px;
         }
+         @media screen and (max-width: 960px){
+            font-size: 48px;
+            max-width: 400px;
+            margin-bottom: 40px;
+         }
+          @media screen and (max-width: 768px){
+                font-size: 36px;
+                max-width: 300px;
+                margin-bottom: 30px;
+            }
         span{
             color: #6544FB;
         }
     }
     .quarter-wrapper {
         display: flex;
+        @media screen and (max-width: 960px){
+            flex-direction: column;
+        }
     }
     .quarter-left {
         width: 40%;
+        @media screen and (max-width: 1270px){
+            margin-right: 30px;
+        }
+        @media screen and (max-width: 960px){
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 30px;
+        }
     }
     .quarter-info {
         font-size: 18px;
@@ -120,11 +160,19 @@
         letter-spacing: -0.03em;
         color: #0B315E;
         max-width: 440px;
+        @media screen and (max-width: 960px){
+            max-width: 80%;
+            font-size: 16px;
+            line-height: 150%;
+        }
     }
     .quarter-advantages {
         display: flex;
         justify-content: space-between;
          max-width: 440px;
+        @media screen and (max-width: 960px){
+            max-width: 330px;
+        }
     }
     .quarter-advantage {
 
@@ -160,12 +208,19 @@
     .quarter-right {
         width: 60%;
         position: relative;
+         @media screen and (max-width: 960px){
+             width: 100%;
+         }
     }
 
     .owl-dots{
         display: none;
     }
-   
+   .owl-carousel{
+          @media screen and (max-width: 960px){
+              height: 500px;
+          }
+   }
     .carousel-navigation{
         display: flex;
     }
@@ -174,12 +229,28 @@
             bottom: 0px;
             left: 0px;
             z-index: 9;
+               img{
+                @media screen and (max-width: 960px){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
     }
      .quarter-right .next{
           position: absolute;
             bottom: 0px;
             left: 95px;
             z-index: 9;
+            @media screen and (max-width: 960px){
+                left: 50px;
+            }
+            img{
+                @media screen and (max-width: 960px){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            
      }
     .quarter-right .prev,
     .quarter-right .next{
