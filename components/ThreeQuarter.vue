@@ -70,7 +70,13 @@
             width: 92%;
         }
         .quar-wr{
-            padding: 0px 0px 0px 100px;
+            padding: 0px 0px 0px 250px;
+              @media screen and (max-width: 1600px){
+                padding: 0px 0px 0px 150px;
+            }
+             @media screen and (max-width: 1270px){
+                padding: 0px 0px 0px 100px;
+            }
             @media screen and (max-width: 960px){
                 padding: 0px 0px 0px 50px;
             }
@@ -107,7 +113,7 @@
         }
     }
 .quarter {
-    padding: 170px 0px 0px;
+    padding: 250px 0px 0px;
     background: #F5F5F7;
     @media screen and (max-width: 960px){
         padding: 80px 0px 0px;

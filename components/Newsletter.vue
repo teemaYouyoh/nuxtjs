@@ -21,7 +21,9 @@
             </button>
           </div>
           <button class="subscribe-btn">Подписаться на рассылку</button>
-          <a href="#" class="left-request">Оставить заявку</a>
+          <!-- <a href="#" class="left-request">Оставить заявку</a> -->
+          
+          <vs-button  @click="popupActivo=true"><span class="left-request">Оставить заявку</span></vs-button>
           <p class="question-answers">Остались вопросы, звоните?</p>
           <p class="question-answers_media">Остались вопросы?</p>
           <a href="tel:+88005005005" class="phone-number">8 800 500 500 5</a>
@@ -29,42 +31,54 @@
       </div>
     </div>
     <vs-popup class="holamundo" :active.sync="popupActivo">
-                <div class="feedback">
-                <div class="feedback-header">
-                    <div class="feedback-wrap">
-                        <h3> <span>Обратная</span> связь</h3>
-                    </div>
-                    <form action="#" class="feedback-form" name="feedback-form">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Телефон">
-                        <input type="text" placeholder="Коментарий">
-                        <div class="feedback-agree">
-                            <input type="radio" id="agreement">
-                            <label for="agreement">Я согласен на обработку персональных данных</label>
-                        </div>
-                        <button class="feedback-send" type="submit">Отправить</button>
-                    </form>
+            <div class="feedback">
+            <div class="feedback-header">
+                <div class="feedback-wrap">
+                    <h3> <span>Обратная</span> связь</h3>
                 </div>
+                <form action="#" class="feedback-form" name="feedback-form">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Телефон">
+                    <p>Коментарий</p>
+                    <input type="text" placeholder="">
+                    <div class="feedback-agree">
+                        <vs-radio v-model="radios1" vs-name="radios1" vs-value="Я согласен на обработку персональных данных"><span class="nes">Я согласен на обработку персональных данных</span></vs-radio>
+                    </div>
+                    <!-- <button class="feedback-send" type="submit">Оставить заявку</button> -->
+                    <vs-button class="feedback-send"   @click="(popupActivo2= true) && (popupActivo=false)"><span class="feedback-send">Оставить заявку</span></vs-button>
+                </form>
             </div>
-        </vs-popup>
-        <vs-button @click="popupActivo=true" color="primary" type="border">Open Default popup</vs-button>
+        </div>
+    </vs-popup>
+     <vs-popup class="holamundo" :active.sync="popupActivo2">
+           <div class="thanks">
+             <div class="thanks-wrapper">
+                <img src="../assets/img/thanks.svg" alt="done">
+                <h5>Спасибо!</h5>
+                <h6>Ваша заявка успешно отправлена</h6>
+                <p>Наши менеджеры проверит заявку и в ближайшее время свяжутся с вами для уточнения деталей</p>
+             </div>
+           </div>
+    </vs-popup>
   </div>
   
 </template>
 
 <script>
 import Vue from 'vue'
-import { vsButton, vsSelect, vsPopup } from 'vuesax'
+import { vsButton, vsSelect, vsPopup, vsRadio } from 'vuesax'
 import 'vuesax/dist/vuesax.css'
 
 Vue.use(vsButton)
 Vue.use(vsSelect)
 Vue.use(vsPopup)
+Vue.use(vsRadio)
 export default {
 name: "Newsletter",
  data(){
     return {
       popupActivo:false,
+        popupActivo2:false,
     }
   },
 }
@@ -270,7 +284,7 @@ name: "Newsletter",
           width: 100%;
         }
       }
-        question-answers_media{
+        .question-answers_media{
           display: none;
         }
         .question-answers{
@@ -297,4 +311,75 @@ name: "Newsletter",
     }
     }
   }
+  .vs-button-primary.vs-button-filled{
+    background: transparent !important;
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+  .vs-button--text{
+    text-transform: uppercase;
+  }
+  .vs-radio{
+    margin-right: 10px;
+  }
+  .nes{
+    margin-left: 10px;
+    display: block;
+  }
+
+
+// ============ thanks popup ===================
+
+.thanks {
+    background: #F2F9FF;
+}
+.thanks-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 218px 50px;
+    @media(max-width: 1600px){
+      padding: 100px 40px;
+    }
+    img{
+      width: 78px;
+      height: 78px;
+      margin-bottom: 41px;
+    }
+    h5{
+      font-weight: bold;
+      font-size: 41px;
+      line-height: 57px;
+      text-align: center;
+      color: #464646;
+      margin-bottom: 10px;
+      
+    }
+    h6{
+      font-weight: bold;
+      font-size: 41px;
+      line-height: 52px;
+      text-align: center;
+      color: #6544FB;
+      margin-bottom: 41px;
+      @media(max-width: 768px){
+          font-size: 24px;
+          line-height: 30px;
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: #5D5F6A;
+      @media(max-width: 768px){
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+}
+
+
 </style>

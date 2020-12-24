@@ -11,7 +11,8 @@
            <div class="header-menu header-menu__desktop">
                <nav>
                    <ul>
-                       <li><a class="header-menu__current scrollto" href="#about">о квартале</a></li>
+                       <li><a class="header-menu__current scrollto" href="#">главная</a></li>
+                       <li><a class="scrollto" href="#about">о квартале</a></li>
                        <li><a href="#apartments" class="scrollto">Кварталы</a></li>
                        <li><a href="#location" class="scrollto">локация</a></li>
                        <li><a href="#advantages" class="scrollto">Преимущества</a></li>
@@ -132,7 +133,7 @@ export default {
 
 <style lang="scss">
     ._container{
-        max-width: 73%;
+        max-width: 74%;
         margin: 0 auto;
         @media screen and (max-width: 1600px){
             max-width: 80%;
@@ -140,7 +141,7 @@ export default {
     }
     .header {
         background: rgba(249, 249, 249, 0.98);
-        padding: 30px 0px;
+        padding: 23px 0px 88px;
         @media screen and (max-width: 960px){
             padding: 20px 0px;
             background: #FFFFFF;
@@ -192,7 +193,7 @@ export default {
             }
         }
         .header-menu {
-           max-width: 760px;
+           max-width: 860px;
             width: 100%;
             &__current{
                 color: #6544FB !important;
@@ -235,6 +236,7 @@ export default {
             }
         }
         .header-phone {
+            margin-top: 8px;
             @media screen and (max-width: 960px){
                 display: none;
             }
@@ -395,21 +397,37 @@ export default {
 
         .feedback-wrap{
             background: #F2F9FF;
-            padding: 20px;
+            padding: 70px 14px 37px 74px;
+             @media(max-width: 960px){
+                padding: 31px 16px;
+             }
         }
     }   
     .feedback-form{
-        padding: 20px;
+        padding:70px 70px 90px;
+         @media(max-width: 960px){
+                padding: 21px 16px;
+             }
+        p{
+            font-size: 16px;
+            line-height: 15px;
+        }
     }
     .feedback-header {
         h3{
             font-weight: 800;
-            font-size: 48px;
-            line-height: 120%;
+            font-weight: 800;
+            font-size: 72px;
             letter-spacing: -0.03em;
             color: #14142B;
              font-family: "Aver-Bold";
              max-width: 300px;
+             @media(max-width: 1600px){
+                 font-size: 60px;
+             }
+               @media(max-width: 960px){
+                 font-size: 48px;
+             }
             span{
                 color: #6544FB;
             }
@@ -417,13 +435,13 @@ export default {
         input{
             display: inline-block;
             box-sizing: border-box;
-            padding: 10px;
+            padding: 10px 0px;
             width: 100%;
             border: none;
             border-bottom: 1px solid #BDBDBD;
             font-size: 16px;
             line-height: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
              font-family: "Geometria";
         }
          input::placeholder{
@@ -447,6 +465,7 @@ export default {
         border-radius: 100px;
         font-size: 18px;
         line-height: 18px;
+        display: inline-block;
         text-align: center;
         color: #FFFFFF;
         border: none;
