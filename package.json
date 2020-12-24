@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "v-owl-carousel": "^1.0.8",
+    "vue-burger-menu": "^2.0.5",
     "vue-owl-carousel2": "^2.0.7"
   },
   "devDependencies": {

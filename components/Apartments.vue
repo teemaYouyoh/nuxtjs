@@ -41,6 +41,10 @@
      @media screen and (max-width: 1600px){
          padding-bottom: 150px;
      }
+     @media screen and (max-width: 560px){
+        background: rgba(249, 249, 249, 0.98) url(../assets/img/bg-mob.png) no-repeat bottom right;
+        background-size: cover;
+     }
     
     .apartments-slider {
       position: absolute;
@@ -69,9 +73,15 @@
             bottom: 0px;
             left: 55.8%;
             transform: translate(-50%, 0%);
+            @media screen and (max-width: 560px){
+                left: 50%;
+            }
             &__green{
                 background: #00BA88;
                 margin-right: 20px;
+                @media screen and (max-width: 560px){
+                    margin-right: 0px;
+                }
             }
             &__blue{
                 background: #0B315E;
@@ -81,6 +91,10 @@
             &__item {
                 max-width: 207px;
                 padding: 20px;
+                @media screen and (max-width: 560px){
+                    padding: 15px;
+                    max-width: 145px;
+                }
                 img{
                     margin-bottom: 15px;
                 }   
@@ -94,6 +108,10 @@
                     @media screen and (max-width: 1600px){
                         font-size: 40px;
                     }
+                     @media screen and (max-width: 768px){
+                         font-size: 36px;
+                        line-height: 49px;
+                     }
                 }
                 p{
                     font-weight: 800;
@@ -101,12 +119,18 @@
                     line-height: 150%;
                     letter-spacing: -0.03em;
                     color: #FFFFFF;
+                     @media screen and (max-width: 768px){
+                         font-size: 14px;
+                     }
                 }
             }
     }
 
 }
 .apartments-slider {
+     @media screen and (max-width: 960px){
+         display: none;
+     }
     p{
         font-weight: 800;
         font-size: 24px;
@@ -137,6 +161,12 @@
     @media screen and (max-width: 1600px){
          padding-top: 130px;
     }
+    @media screen and (max-width: 960px){
+        padding-bottom: 100px;
+    }
+    @media screen and (max-width: 560px){
+        padding-top: 100px;
+    }
 		// .apartments-info__rate
 
 		&__rate {
@@ -147,6 +177,9 @@
             color: #14142B;
             font-family: "Geometria-Medium", sans-serif;
             margin-bottom: 30px;
+            @media screen and (max-width: 768px){
+                display: none;
+            }
 		}
 
 		// .apartments-info__price
@@ -164,6 +197,16 @@
                font-size: 60px;
                max-width: 550px;
             }
+             @media screen and (max-width: 960px){
+                 font-size: 48px;
+                 max-width: 400px;
+                 margin-bottom: 40px;
+             }
+             @media screen and (max-width: 768px){
+                 font-size: 36px;
+                 max-width: 300px;
+                 margin-bottom: 30px;
+             }
 		}
 
 		// .apartments-info__distance
@@ -175,6 +218,11 @@
             color: #14142B;
              font-family: "Geometria-Medium", sans-serif;
              margin-bottom: 20px;
+            @media screen and (max-width: 768px){
+                font-size: 18px;
+                line-height: 150%;
+                margin-bottom: 10px;
+            }
 		}
 
 		// .apartments-info__list
@@ -188,8 +236,15 @@
                 line-height: 150%;
                 color: #0B315E;
                 margin-bottom: 10px;
+                @media screen and (max-width: 768px){
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
                 img{
                     margin-right: 15px;
+                    @media screen and (max-width: 768px){
+                        margin-right: 10px;
+                    }
                 }
             }
         }

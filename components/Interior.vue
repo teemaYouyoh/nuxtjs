@@ -25,6 +25,9 @@
 <style lang="scss">
 .interior {
     padding: 200px 0px 0px;
+     @media screen and (max-width: 1600px){
+         padding: 150px 0px 0px;
+     }
     background: #F9F9F9;
     .owl-stage {
         right: 70px !important;

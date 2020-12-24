@@ -14,7 +14,6 @@
       <Footer />
 
 
-
   </div>
 </template>
 
@@ -25,7 +24,7 @@ import Coworking from '../components/Coworking.vue'
 import Footer from '../components/Footer.vue'
 import Infrastructure from '../components/Infrastructure.vue'
 export default {
-  components: { Coworking, Infrastructure, Footer },}
+  components: { Coworking, Infrastructure, Footer, }, }
 </script>
 
 <style>
