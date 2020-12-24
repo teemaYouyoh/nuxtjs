@@ -101,7 +101,7 @@
             bottom: -50px;
             left: 0px;
             z-index: 9;
-             display: none;
+            //  display: none;
               @media screen and (max-width: 560px){
                   display: block;
               }
@@ -118,7 +118,7 @@
             bottom: -50px;
             left: 95px;
             z-index: 9;
-            display: none;
+            // display: none;
             @media screen and (max-width: 960px){
                 left: 50px;
             }

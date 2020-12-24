@@ -225,7 +225,7 @@ export default {
         .next{
             position: absolute;
             bottom: -150px;
-            left: 95px;
+            right: 95px;
             z-index: 9;
             max-width: 95px;
             cursor: pointer;

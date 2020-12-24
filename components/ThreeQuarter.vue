@@ -70,19 +70,20 @@
             width: 92%;
         }
         .quar-wr{
-            padding: 0px 0px 0px 250px;
-              @media screen and (max-width: 1600px){
-                padding: 0px 0px 0px 150px;
+            margin-left: auto;
+            width: 87%;
+            @media screen and (max-width: 1600px){
+               width: 92%;
             }
-             @media screen and (max-width: 1270px){
-                padding: 0px 0px 0px 100px;
-            }
-            @media screen and (max-width: 960px){
-                padding: 0px 0px 0px 50px;
-            }
-             @media screen and (max-width: 560px){
-                padding: 0px 0px 0px 25px;
-            }
+            //  @media screen and (max-width: 1270px){
+            //     padding: 0px 0px 0px 100px;
+            // }
+            // @media screen and (max-width: 960px){
+            //     padding: 0px 0px 0px 50px;
+            // }
+            //  @media screen and (max-width: 560px){
+            //     padding: 0px 0px 0px 25px;
+            // }
         }
     }
     .quarter-three{
@@ -139,7 +140,7 @@
         letter-spacing: -0.03em;
         color: #0B315E;
         max-width: 800px;
-        margin-bottom: 35px;
+        margin-bottom: 73px;
        font-family: "Aver-Regular";
        @media screen and (max-width: 1600px){
             font-size: 60px;
@@ -165,7 +166,10 @@
         }
     }
     .quarter-left {
-        width: 40%;
+        width: 35%;
+        @media screen and (max-width: 1600px){
+            width: 40%;
+        }
         @media screen and (max-width: 1270px){
             margin-right: 30px;
         }
@@ -203,11 +207,11 @@
             }
     }
     .advantage-quater {
-            margin-top: 50px;
+            margin-top: 64px;
             // .advantage-quater__icon
 
             &__icon {
-                margin-bottom: 15px;
+                margin-bottom: 30px;
             }
 
             // .advantage-quater__grey
@@ -227,10 +231,16 @@
             }
     }
     .quarter-right {
-        width: 60%;
+        width: 65%;
+        margin-top: -70px;
         position: relative;
+        @media screen and (max-width: 1600px){
+            margin-top: -30px;
+            width: 60%;
+        }
          @media screen and (max-width: 960px){
              width: 100%;
+             margin-top: 30px;
          }
     }
 

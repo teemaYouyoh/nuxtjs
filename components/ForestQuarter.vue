@@ -252,7 +252,10 @@ export default {
         }
     }
     .forest-slide{
-        padding: 0px 0px 0px 100px;
+        padding: 0px 0px 0px 250px;
+        @media screen and (max-width: 1600px){
+            padding: 0px 0px 0px 100px;
+        }
     }
     .quarter-container{
         margin-left: auto;
@@ -378,7 +381,7 @@ export default {
    .prev{
         position: absolute;
         bottom: 0px;
-        left: 0px;
+        left: 12%;
         z-index: 9;
         max-width: 95px;
         max-height: 95px;
@@ -387,7 +390,7 @@ export default {
     .next{
         position: absolute;
         bottom: 0px;
-        left: 95px;
+        left: 18%;
         z-index: 9;
         max-width: 95px;
          cursor: pointer;
@@ -395,7 +398,7 @@ export default {
      }
 }
 .quarter {
-    padding: 170px 0px 100px;
+    padding: 250px 0px 100px;
       @media screen and (max-width: 960px){
             padding:40px 0px;
         }
@@ -415,7 +418,7 @@ export default {
         letter-spacing: -0.03em;
         color: #0B315E;
         max-width: 800px;
-        margin-bottom: 35px;
+        margin-bottom: 73px;
         font-family: "Aver-Regular";
         @media screen and (max-width: 1600px){
             font-size: 60px;
@@ -446,7 +449,10 @@ export default {
         display: flex;
     }
     .quarter-left {
-        width: 40%;
+        width: 35%;
+        @media screen and (max-width: 1600px){
+            width: 40%;
+        }
         @media screen and (max-width: 960px){
             width: 100%;
         }
@@ -482,13 +488,13 @@ export default {
             }
     }
     .advantage-quater {
-            margin-top: 50px;
+            margin-top: 64px;
             // .advantage-quater__icon
 
             &__icon {
                 max-width: 45px;
                 max-height: 45px;
-                margin-bottom: 15px;
+                margin-bottom: 30px;
             }
 
             // .advantage-quater__grey
@@ -509,10 +515,16 @@ export default {
             }
     }
     .quarter-right {
-        width: 60%;
+        width: 65%;
         position: relative;
+        margin-top: -70px;
+         @media screen and (max-width: 1600px){
+            margin-top: -30px;
+            width: 60%;
+        }
           @media screen and (max-width: 960px){
              width: 100%;
+             margin-top: 20px;
          }
     }
    
