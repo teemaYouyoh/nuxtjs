@@ -52,6 +52,10 @@ body{
     letter-spacing: -0.03em;
     color: #0b315e;
     padding: 215px 0 104px 0;
+    @media screen and (max-width: 1600px){
+      font-size: 60px;
+      padding: 150px 0px 100px;
+  }
     span{
       color: #6544FB;
     }

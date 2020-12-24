@@ -89,6 +89,9 @@
             max-width: 800px;
            font-family: "Aver-Regular";
             margin-bottom: 30px;
+            @media screen and (max-width: 1600px){
+                font-size: 60px;
+            }
             span{
                 display: block;
                 color: #6544FB;

@@ -91,6 +91,9 @@
                     letter-spacing: -0.03em;
                     color: #FFFFFF;
                     margin-bottom: 10px;
+                    @media screen and (max-width: 1600px){
+                        font-size: 40px;
+                    }
                 }
                 p{
                     font-weight: 800;
@@ -157,6 +160,10 @@
             color: #0B315E;
             max-width: 650px;
             margin-bottom: 50px;
+            @media screen and (max-width: 1600px){
+               font-size: 60px;
+               max-width: 550px;
+            }
 		}
 
 		// .apartments-info__distance

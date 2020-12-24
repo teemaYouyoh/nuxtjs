@@ -46,6 +46,10 @@
     font-family: "Aver-Regular";
     margin-bottom: 30px;
     max-width: 800px;
+    @media screen and (max-width: 1600px){
+      font-size: 60px;
+      max-width: 500px;
+    }
 }
 .interior-slide {
     width: 93%;

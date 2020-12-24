@@ -75,6 +75,9 @@ name: "Advantages"
           letter-spacing: -0.03em;
           color: #FFFFFF;
           padding-bottom: 150px;
+          @media screen and (max-width: 1600px){
+            font-size: 60px;
+          }
         }
         .subtitle{
           font-family: "Geometria-Bold";

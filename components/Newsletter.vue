@@ -82,6 +82,9 @@ name: "Newsletter"
         max-width: 1025px;
         color: #0B315E;
         margin: 32px 0px;
+        @media screen and (max-width: 1600px){
+           font-size: 60px;
+        }
         span{
           color: #6544FB;
         }

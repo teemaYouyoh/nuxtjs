@@ -71,8 +71,12 @@
     letter-spacing: -0.03em;
     color: #0B315E;
     max-width: 800px;
-  font-family: "Aver-Regular";
+    font-family: "Aver-Regular";
     margin-bottom: 60px;
+    @media screen and (max-width: 1600px){
+        font-size: 60px;
+        max-width: 500px;
+    }
 }
 .infrastructure-wrapper {
     display: flex;

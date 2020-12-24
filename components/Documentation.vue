@@ -91,6 +91,10 @@ name: "Documentation"
       letter-spacing: -0.03em;
       color: #0B315E;
       padding-bottom: 210px;
+      @media screen and (max-width: 1600px){
+        font-size: 60px;
+        padding-bottom: 150px;
+      }
     }
     .documents-wrapper{
       padding-bottom: 108px;
