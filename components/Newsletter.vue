@@ -20,7 +20,7 @@
               </svg>
             </button>
           </div>
-          <p class="left-request">Оставить заявку</p>
+          <a href="#" class="left-request">Оставить заявку</a>
           <p class="question-answers">Остались вопросы, звоните?</p>
           <a href="tel:+88005005005" class="phone-number">8 800 500 500 5</a>
         </div>
@@ -72,7 +72,7 @@ name: "Newsletter"
         background-size: cover;
 
       .info{
-        font-family: "Aver-Bold";
+        font-family: "Aver-Regular";
         font-style: normal;
         font-weight: 800;
         font-size: 72px;
@@ -111,8 +111,9 @@ name: "Newsletter"
         }
         .send-email{
           position: absolute;
-          right: 2px;
-          top: 2px;
+          right: 0%;
+          top: 50%;
+          transform: translate(-5%, -50%);
           width: 54px;
           height: 54px;
           border-radius: 8px;
@@ -129,12 +130,10 @@ name: "Newsletter"
         line-height: 110%;
         border-bottom: 3px solid #6544FB;
         padding-bottom: 5px;
-        /* or 13px */
         text-align: right;
         letter-spacing: -0.03em;
         text-transform: uppercase;
-
-        /* Основной */
+        text-decoration: none;
         color: #6544FB;
       }
       .question-answers{

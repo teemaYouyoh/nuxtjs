@@ -24,7 +24,7 @@
 </script>
 <style lang="scss">
 .interior {
-    padding: 200px 0px 100px;
+    padding: 200px 0px 0px;
     background: #F9F9F9;
     .owl-stage {
         right: 70px !important;
@@ -43,7 +43,7 @@
     line-height: 120%;
     letter-spacing: -0.03em;
     color: #0B315E;
-    font-family: "Aver-Medium";
+    font-family: "Aver-Regular";
     margin-bottom: 30px;
     max-width: 800px;
 }

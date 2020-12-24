@@ -100,7 +100,7 @@
         color: #0B315E;
         max-width: 800px;
         margin-bottom: 35px;
-        font-family: "Aver-Medium";
+       font-family: "Aver-Regular";
         span{
             color: #6544FB;
         }

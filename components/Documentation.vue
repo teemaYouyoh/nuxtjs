@@ -83,8 +83,9 @@ name: "Documentation"
       padding-bottom: 32px;
     }
     .documents-title{
-      font-family: "Aver-Bold";
+      font-family: "Aver-Regular";
       font-style: normal;
+      font-weight: 900;
       font-size: 72px;
       line-height: 110%;
       letter-spacing: -0.03em;

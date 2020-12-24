@@ -66,8 +66,9 @@ name: "Advantages"
       //max-height: 800px;
       .left{
         transform: translate(0, 292px);
+        width: 48%;
         .title{
-          font-family: "Aver-Bold";
+        font-family: "Aver-Regular";
           font-style: normal;
           font-size: 72px;
           line-height: 110%;
@@ -88,13 +89,13 @@ name: "Advantages"
       }
       .right{
         transform: translate(0, 205px);
+        width: 48%;
         .right-pic{
         }
       }
     }
   }
   .advantages-pic{
-    max-width: 690px;
     height: auto;
     width: 100%;
   }
