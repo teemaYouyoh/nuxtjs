@@ -20,6 +20,8 @@ import "../assets/styles/index.scss"
 import Coworking from '../components/Coworking.vue'
 import Footer from '../components/Footer.vue'
 import Infrastructure from '../components/Infrastructure.vue'
+import $ from "jquery";
+
 // var VueScrollTo = require('vue-scrollto');
 //
 // var Vue = require('vue');
@@ -40,6 +42,16 @@ import Infrastructure from '../components/Infrastructure.vue'
 //   y: true
 // })
 export default {
+  mounted: () => {
+
+    $(document).ready(() => {
+      $(() => {
+        $.scrollify({
+          section : ".example-classname",
+        });
+      });
+    })
+  },
   components: { Coworking, Infrastructure, Footer, }, }
 </script>
 
@@ -56,7 +68,7 @@ export default {
      margin-top: 50px;
     }
   // ============ popup settings
-  
+
     .vs-popup--title{
         display: none;
         background: transparent;
@@ -88,7 +100,7 @@ export default {
         width: 100% !important;
         border-radius: 8px !important;
     }
-    
+
   .vs-input--input{
     border: none !important;
     border-radius: 0px !important;

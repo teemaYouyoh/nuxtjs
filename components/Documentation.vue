@@ -1,5 +1,5 @@
 <template>
-  <div class="documents">
+  <div class="documents example-classname">
     <div class="documents_container _container">
       <p class="documents-subtitle">О КВАРТАЛЕ</p>
       <h3 class="documents-title">Документация</h3>

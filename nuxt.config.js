@@ -18,6 +18,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    {src: '~/plugins/jquery-scroll.js', ssr: false},
     {src: 'plugins/owl.js', ssr: false},
     { src: '~plugins//slide-menu', ssr: false }// Only works on client side
   ],

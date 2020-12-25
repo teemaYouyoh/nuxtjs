@@ -1,5 +1,5 @@
 <template>
-  <div id="location" class="full-map">
+  <div id="location" class="full-map example-classname">
     <div class="_container">
       <h2 class="title-map"><span>Локация</span> – мы находимся рядом с МКАД.</h2>
       <p class="subtitle-map-media">Локация</p>

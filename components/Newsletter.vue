@@ -1,5 +1,5 @@
 <template>
-  <div id="contacts" class="newsletter">
+  <div id="contacts" class="newsletter example-classname">
     <button id="btn-up" class="btn-up-news">
       <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.75 17.8125V4.6875" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
