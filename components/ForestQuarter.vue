@@ -249,6 +249,9 @@ export default {
             let icon = $(this).children()[0]
              $(icon).toggleClass('tran-scale');
          })
+    if(screen.width <= 768){
+      $('.example-classname').removeClass('example-classname');
+    }
   }
 }
 </script>
