@@ -44,7 +44,9 @@ import $ from "jquery";
 // })
 export default {
   mounted: () => {
-
+    if(screen.width <= 768){
+          $('.example-classname').removeClass('.example-classname');
+      }
     $(document).ready(() => {
       $(() => {
         $.scrollify({
