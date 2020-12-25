@@ -249,7 +249,10 @@ export default {
             let icon = $(this).children()[0]
              $(icon).toggleClass('tran-scale');
          })
+    if(screen.width <= 768){
+      $('.example-classname').removeClass('example-classname');
     }
+  }
 }
 </script>
 <style lang="scss">
@@ -259,7 +262,6 @@ export default {
 .tran-scale{
   transform: scale(1,-1);
 }
-
     ._container{
         max-width: 73%;
         margin: 0 auto;
@@ -291,7 +293,6 @@ export default {
         .forest-sdr{
             background: #F2F9FF;
         }
-
         .forest-mob__carousel{
                margin-left: auto;
                 width: 95%;
@@ -312,7 +313,6 @@ export default {
             width: 90%;
         }
 		// .forest-itm__qw
-
 		&__qw {
             font-weight: bold;
             font-size: 16px;
@@ -323,9 +323,7 @@ export default {
             margin-bottom: 15px;
             padding-top: 15px;
 		}
-
 		// .forest-itm__name
-
 		&__name {
             font-weight: 800;
             font-size: 36px;
@@ -337,16 +335,12 @@ export default {
                 color: #6544FB;
             }
 		}
-
 		// .forest-itm__photo
-
 		&__photo {
             width: 100%;
             margin-bottom: 15px;
 		}
-
 		// .forest-itm__desck
-
 		&__desck {
             font-size: 16px;
             line-height: 145%;
@@ -354,9 +348,7 @@ export default {
             color: #0B315E;
             margin-bottom: 20px;
 		}
-
 		// .forest-itm__link
-
 		&__link {
             display: flex;
             justify-content: space-between;
@@ -369,7 +361,6 @@ export default {
             padding: 20px;
 		}
 }
-
     }
 .forest{
     background: #F9F9F9;
@@ -515,32 +506,25 @@ export default {
     }
     }
     .quarter-advantage {
-
             // .quarter-advantage__item
-
             &__item {
             }
     }
     .advantage-quater {
             margin-top: 64px;
             // .advantage-quater__icon
-
             &__icon {
                 max-width: 45px;
                 max-height: 45px;
                 margin-bottom: 30px;
             }
-
             // .advantage-quater__grey
-
             &__grey {
                 font-size: 12px;
                 line-height: 150%;
                 color: #A1A6AA;
             }
-
             // .advantage-quater__blue
-
             &__blue {
                 font-size: 12px;
                 line-height: 150%;
@@ -561,7 +545,6 @@ export default {
              margin-top: 20px;
          }
     }
-
    .owl-stage {
        right: 0px;
     }
@@ -618,13 +601,10 @@ export default {
             }
         }
     }
-
-
 }
   .quarter .owl-carousel .owl-item img {
     width: 100%;
 }
-
 .quarter-info__second{
     margin-top: 20px;
 }
