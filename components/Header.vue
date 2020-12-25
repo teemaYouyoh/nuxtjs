@@ -325,12 +325,18 @@ export default {
         display: flex;
         align-items: center;
         position: absolute;
-        top: 18px;
+        top: 12px;
         right: 20px;
         width: 26px;
         height: 26px;
         cursor: pointer;
         z-index: 90999;
+    }
+    .menu__btn > span{
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
     }
     .menu__btn > span,
     .menu__btn > span::before,
@@ -338,7 +344,7 @@ export default {
         display: block;
         position: absolute;
         width: 100%;
-        height: 3px;
+        height: 4px;
         border-radius: 6px;
         background-color: #0B315E;
     }
