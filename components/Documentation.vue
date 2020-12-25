@@ -137,7 +137,10 @@ name: "Documentation"
 
 <style scoped lang="scss">
   .documents{
-    background-color: #F2F9FF;
+    background-color: #F9F9F9;
+     @media screen and (max-width: 560px){
+       background-color: #fff;
+     }
     .documents-wrapper{
       position: relative;
     }
@@ -149,6 +152,9 @@ name: "Documentation"
             max-width: 45px;
             max-height: 45px;
             cursor: pointer;
+             @media screen and (max-width: 560px){
+               left: 50px;
+             }
         }
         .next{
             position: absolute;
@@ -158,6 +164,9 @@ name: "Documentation"
             max-width: 45px;
             cursor: pointer;
             max-height: 45px;
+            @media screen and (max-width: 560px){
+               left: 100px;
+             }
         }
     .documents-subtitle{
       font-family: "Aver-Bold";

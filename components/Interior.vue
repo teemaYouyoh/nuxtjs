@@ -39,12 +39,11 @@
          padding: 150px 0px 0px;
      }
       @media screen and (max-width: 960px){
-          padding-top: 80px;
+          padding-top: 0px;
       }
        @media screen and (max-width: 560px){
            padding-bottom: 100px;
        }
-    background: #F9F9F9;
     .owl-stage {
         right: 70px !important;
     }
@@ -98,12 +97,22 @@
 }
  .prev{
           position: absolute;
-            bottom: -50px;
-            left: 0px;
+            top: -150px;
+            right: 345px;
             z-index: 9;
+             cursor: pointer;
             //  display: none;
+            @media screen and (max-width: 1600px){
+                right: 195px;
+            }
+             @media screen and (max-width: 960px){
+                right: 120px;
+            }
               @media screen and (max-width: 560px){
-                  display: block;
+                  top: unset;
+                  bottom: -60px;
+                  right: unset;
+                  left: 0px;
               }
                img{
                 @media screen and (max-width: 960px){
@@ -115,15 +124,22 @@
     }
     .next{
           position: absolute;
-            bottom: -50px;
-            left: 95px;
+            top: -150px;
+            right: 250px;
             z-index: 9;
+            cursor: pointer;
             // display: none;
+             @media screen and (max-width: 1600px){
+                 right: 100px;
+            }
             @media screen and (max-width: 960px){
-                left: 50px;
+                right: 70px;
             }
                @media screen and (max-width: 560px){
-                  display: block;
+                  top: unset;
+                  bottom: -60px;
+                  right: unset;
+                  left: 50px;
               }
             img{
                 @media screen and (max-width: 960px){

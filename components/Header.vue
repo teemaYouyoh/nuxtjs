@@ -285,7 +285,7 @@ export default {
         width: 26px;
         height: 26px;
         cursor: pointer;
-        z-index: 9999;
+        z-index: 90999;
     }
     .menu__btn > span,
     .menu__btn > span::before,
@@ -318,7 +318,7 @@ export default {
         list-style: none;
         background-color: #F2F9FF;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        z-index: 9;
+        z-index: 9999;
         transition: all 0.5s;
     }
     .menu__item {

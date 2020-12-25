@@ -45,6 +45,10 @@ body{
   @media(max-width: 576px){
     padding-bottom: 72px;
   }
+  @media(max-width: 400px){
+    padding-bottom: 72px;
+    padding-top: 50px;
+  }
   .title-map{
     max-width: 930px;
    font-family: "Aver-Demi";

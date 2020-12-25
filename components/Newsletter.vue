@@ -224,7 +224,7 @@ name: "Newsletter",
             align-items: center;
             width: 100%;
             height: 60px;
-            font-family: "Aver-Bold";
+            font-family: "Aver-Regular";
             font-style: normal;
             font-weight: 800;
             font-size: 12px;
@@ -287,6 +287,15 @@ name: "Newsletter",
       }
         .question-answers_media{
           display: none;
+          @media(max-width: 560px){
+            display: block;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            color: #0B315E;
+            margin-bottom: 5px;
+            padding-top: 0px !important;
+          }
         }
         .question-answers{
           @media(max-width: 576px){

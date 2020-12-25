@@ -2,7 +2,7 @@
     <div class="coworking">
         <div class="coworking-container">
              <no-ssr>
-                <carousel class="сoworking-carousel" :items="1" :nav="false" :loop="true" :responsive="{0:{stagePadding:0},560:{stagePadding:70}}">
+                <carousel class="сoworking-carousel" :items="1" :nav="false" :loop="true" :responsive="{0:{stagePadding:0},560:{stagePadding:140}}">
                     <div class="coworking-slide" @click="popupActivo=true">
                         <h3 class="coworking-header"><span>Coworking</span>не отходяот дома.</h3>
                         <div class="coworking-photo">
@@ -183,7 +183,7 @@ export default {
 
 
     .coworking-slide{
-        padding-left: 150px;
+        padding-left: 200px;
         @media screen and (max-width: 1600px){
             padding-left: 100px;
         }
@@ -205,7 +205,7 @@ export default {
           background: #F2F9FF;
       }
        .owl-stage {
-            right: 70px !important;
+            right: 140px !important;
             @media screen and (max-width: 560px){
                 right: 0px !important;
             }
@@ -213,11 +213,19 @@ export default {
       .prev{
             position: absolute;
             bottom: -150px;
-            left: 0px;
+            left: 200px;
             z-index: 9;
             max-width: 95px;
             max-height: 95px;
+            top: unset;
             cursor: pointer;
+             @media screen and (max-width: 1600px){
+              left: 103px;
+            }
+            @media screen and (max-width: 960px){
+              left: 54px;
+              bottom: -100px;
+            }
              @media screen and (max-width: 560px){
                  display: none;
              }
@@ -225,11 +233,19 @@ export default {
         .next{
             position: absolute;
             bottom: -150px;
-            right: 95px;
+            left: 295px;
             z-index: 9;
+            top: unset;
             max-width: 95px;
             cursor: pointer;
             max-height: 95px;
+            @media screen and (max-width: 1600px){
+              left: 196px;
+            }
+              @media screen and (max-width: 960px){
+              left: 100px;
+              bottom: -100px;
+            }
              @media screen and (max-width: 560px){
                  display: none;
              }
@@ -270,7 +286,7 @@ export default {
             }
         }
         .coworking-photo {
-            width: 85%;
+            width: 100%;
             img{
                 width: 100%;
                 object-fit: cover;

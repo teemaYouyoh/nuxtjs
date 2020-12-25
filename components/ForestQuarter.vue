@@ -93,7 +93,7 @@
                                         Городской квартал» выполнен в очень динамичном стиле. Из окон домов отрываются прекрасные панорамные виды на столицу.
                                     </p>
                                     <p class="quarter-info quarter-info__second">
-                                       При этом квартал совсем не теряет в экологичности – рядом находится Юго-восточный лесопарк с его каскадом прудов., редкими растениями и животными, что также наполняет комплекс чистым воздухом и приближает его к природе.
+                                       При этом квартал совсем не теряет в экологичности – рядом находится Юго-восточный лесопарк с его каскадом прудов.
                                     </p>
                                     <p class="quarter-willsec">Здесь будут обустроены:</p>
                                     <div class="quarter-advantages">
@@ -272,11 +272,14 @@ export default {
         @media screen and (max-width: 960px){
             display: block;
         }
+        .forest-sdr{
+            background: #F2F9FF;
+        }
 
         .forest-mob__carousel{
                margin-left: auto;
                 width: 95%;
-                margin-top: 30px;
+                padding: 30px 0px;
             .forest-sdr__item{
                 background: #fff;
                 max-width: 122px;
@@ -381,20 +384,34 @@ export default {
    .prev{
         position: absolute;
         bottom: 0px;
-        left: 12%;
+        left: 240px;
+        top: unset;
         z-index: 9;
         max-width: 95px;
         max-height: 95px;
         cursor: pointer;
+        @media screen and (max-width: 1600px){
+            left: 100px;
+        }
+          @media screen and (max-width: 1270px){
+              bottom: -30px;
+          }
     }
     .next{
         position: absolute;
         bottom: 0px;
-        left: 18%;
+        top: unset;
+        left: 334px;
         z-index: 9;
         max-width: 95px;
          cursor: pointer;
         max-height: 95px;
+         @media screen and (max-width: 1600px){
+            left: 195px;
+        }
+          @media screen and (max-width: 1270px){
+              bottom: -30px;
+          }
      }
 }
 .quarter {

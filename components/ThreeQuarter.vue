@@ -97,12 +97,22 @@
               max-height: 380px !important;
             }
             @media screen and (max-width: 960px){
-              max-height: unset !important;
+              max-height: 300px !important;
               width: 100% !important;
             }
+             @media screen and (max-width: 560px){
+              max-height: 240px !important;
+              width: 100% !important;
+            }
+              @media screen and (max-width: 400px){
+                  max-height: 150px !important;
+              }
             .owl-carousel .owl-item {
                  @media screen and (max-width: 960px){
                     margin: 0px 12px;
+                 }
+                 @media screen and (max-width: 560px){
+                    max-height: 150px;
                  }
             }
         }
@@ -120,6 +130,12 @@
         padding: 80px 0px 0px;
         background: #f9f9f9;
     }
+     @media screen and (max-width: 560px){
+         padding-bottom: 100px !important;
+     }
+     @media screen and (max-width: 400px){
+         padding-bottom: 0px !important;
+     }
     .quarter-about {
          font-family: "Geometria-Bold";
         font-weight: 800;
@@ -250,9 +266,12 @@
         @media screen and (max-width: 560px){
             display: block;
             text-align: right;
-            transform: translateY(-160px);
+            transform: translateY(20px);
             margin-right: 20px;
         }
+         @media screen and (max-width: 400px){
+            transform: translateY(-100px);
+         }
     }
     .owl-theme .owl-dots .owl-dot.active span{
         background: #6544FB;
@@ -280,12 +299,20 @@
           position: absolute;
             bottom: 0px;
             left: 0px;
+            top: unset;
             z-index: 9;
+             @media screen and (max-width: 400px){
+                 bottom: 115px !important;
+             }
                img{
                 @media screen and (max-width: 960px){
                     width: 50px;
                     height: 50px;
                 }
+                  @media screen and (max-width: 560px){
+                    bottom: -30px;
+                }
+                
             }
     }
      .quarter-right .next{
@@ -293,9 +320,16 @@
             bottom: 0px;
             left: 95px;
             z-index: 9;
+            top: unset;
             @media screen and (max-width: 960px){
                 left: 50px;
             }
+            @media screen and (max-width: 560px){
+                bottom: 0px;
+            }
+             @media screen and (max-width: 400px){
+                 bottom: 115px !important;
+             }
             img{
                 @media screen and (max-width: 960px){
                     width: 50px;
