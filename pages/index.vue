@@ -47,18 +47,18 @@ export default {
     if(screen.width <= 768){
           $('.example-classname').removeClass('.example-classname');
       }
-    $(document).ready(() => {
-      $(() => {
-        $.scrollify({
-          section : ".example-classname",
-        });
-      });
-      // $(() => {
-      //   $.scrollify({
-      //     section : ".quartal-scroll",
-      //   });
-      // });
-    })
+    // $(document).ready(() => {
+    //   $(() => {
+    //     $.scrollify({
+    //       section : ".example-classname",
+    //     });
+    //   });
+    //   // $(() => {
+    //   //   $.scrollify({
+    //   //     section : ".quartal-scroll",
+    //   //   });
+    //   // });
+    // })
   },
   components: { Coworking, Infrastructure, Footer, }, }
 </script>
