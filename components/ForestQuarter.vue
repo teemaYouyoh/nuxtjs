@@ -1,5 +1,5 @@
 <template>
-    <div id="apartments" class="quarter forest">
+    <div id="apartments" class="quarter forest example-classname">
         <div class="quarter-container">
                <no-ssr>
                     <carousel class="forest-carousel" :items="1" :nav="false" :loop="true">
@@ -150,7 +150,7 @@
                          <p class="forest-itm__desck">Лесной квартал примыкает к лесопарковой зоне, благодаря чему вы сможете круглый год отдыхать на природе, наслаждаться семейными прогулками на свежем воздухе и заниматься спортом. Здесь будут обустроены беговые дорожки и лыжные трассы, лектории для детей и уютные зоны для пикников.</p>
                       </div>
                         <a class="forest-itm__link" >Здесь будут обустроены: <img src="../assets/img/r.svg" alt="open"></a>
-                        <div class="forest-sdr">
+                        <div class="forest-sdr forest-kvartal">
                             <no-ssr>
                             <carousel class="forest-mob__carousel" :items="3" :nav="false" :loop="true" :stagePadding="20">
                                 <div class="forest-sdr__item">
@@ -180,7 +180,7 @@
                          <p class="forest-itm__desck">Водный квартал располагается прямо на берегу реки Юшунка. Изюминкой квартала станет благоустроенная набережная с велодорожками, интерактивными арт-объектами и уютным освещением, благодаря которому здесь можно будет отдыхать не только днем, но и вечером.</p>
                       </div>
                         <a class="forest-itm__link" >Здесь будут обустроены: <img src="../assets/img/r.svg" alt="open"></a>
-                        <div class="forest-sdr">
+                        <div class="forest-sdr water-kvartal">
                             <no-ssr>
                             <carousel class="forest-mob__carousel" :items="3" :nav="false" :loop="true" :stagePadding="20">
                                 <div class="forest-sdr__item">
@@ -210,7 +210,7 @@
                          <p class="forest-itm__desck">Городской квартал выполнен в очень динамичном стиле. Из окон домов отрываются прекрасные панорамные виды на столицу. При этом квартал совсем не теряет в экологичности рядом находится Юго-восточный лесопарк с его каскадом прудов., редкими растениями и животными, что также наполняет комплекс чистым воздухом и приближает его к природе.</p>
                       </div>
                         <a class="forest-itm__link" >Здесь будут обустроены: <img src="../assets/img/r.svg" alt="open"></a>
-                        <div class="forest-sdr">
+                        <div class="forest-sdr city-kvartal">
                             <no-ssr>
                             <carousel class="forest-mob__carousel" :items="3" :nav="false" :loop="true" :stagePadding="20">
                                 <div class="forest-sdr__item">
@@ -237,13 +237,32 @@
     </div>
 </template>
 <script>
+import $ from "jquery";
 export default {
      data: {
     active: false
+  },
+  mounted() {
+       $(document).ready(function (){
+         $('.forest-itm__link').click(function (){
+              let myChild = $(this).parent().children()[2];
+              $(myChild).toggle();
+             // $('.forest-sdr').toggle();
+            let icon = $(this).children()[0]
+             $(icon).toggleClass('tran-scale');
+         })
+       })
   }
 }
 </script>
 <style lang="scss">
+.forest-sdr{
+  display: none;
+}
+.tran-scale{
+  transform: scale(1,-1);
+}
+
     ._container{
         max-width: 73%;
         margin: 0 auto;

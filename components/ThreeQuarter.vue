@@ -1,5 +1,5 @@
 <template>
-    <div id="about" class="quarter quarter-three">
+    <div id="about" class="quarter quarter-three example-classname">
         <div class="quarter-container">
             <div class="quar-wr">
                   <p class="quarter-about">О КВАРТАЛЕ</p>
