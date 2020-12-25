@@ -249,7 +249,7 @@ export default {
             let icon = $(this).children()[0]
              $(icon).toggleClass('tran-scale');
          })
-  }
+    }
 }
 </script>
 <style lang="scss">
@@ -321,6 +321,7 @@ export default {
             text-transform: uppercase;
             color: #0B315E;
             margin-bottom: 15px;
+            padding-top: 15px;
 		}
 
 		// .forest-itm__name

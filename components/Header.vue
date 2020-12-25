@@ -67,10 +67,10 @@
                </nav>
            </div>
         </div>
-
+            
       <!-- <Feedback /> -->
     </div>
-
+    
 </template>
 
 <script>
@@ -104,15 +104,7 @@ export default {
           },
           800 //speed
         );
-      });
-      $("#btn-up-footer").click(function (){
-        $("body,html").animate(
-          {
-            scrollTop: $("#header").offset().top
-          },
-          800 //speed
-        );
-      });
+      })
     });
   }
 }
@@ -410,7 +402,7 @@ export default {
                 padding: 31px 16px;
              }
         }
-    }
+    }   
     .feedback-form{
         padding:70px 70px 90px;
          @media(max-width: 960px){
@@ -481,7 +473,7 @@ export default {
         box-sizing: border-box;
         width: 100%;
         &:hover{
-           background: #7f62ff;
+           background: #7f62ff; 
            transition: all 0.3s;
         }
     }
