@@ -125,4 +125,7 @@ body{
     left: 60px;
     z-index: 999999;
   }
+  .vs-button-primary.vs-button-filled:hover{
+    box-shadow: unset !important;
+  }
 </style>

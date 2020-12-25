@@ -102,7 +102,7 @@ export default {
       $("#btn-up").click(function (){
         $("body,html").animate(
           {
-            scrollTop: $("#header").offset().top
+            scrollTop: $(".apartments").offset().top
           },
           800 //speed
         );

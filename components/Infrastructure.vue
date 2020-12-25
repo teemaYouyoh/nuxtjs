@@ -15,7 +15,7 @@
                         </div>
                     </div>
                      <div class="infrastructure-item">
-                        <img class="infrastructure-item__back" src="../assets/img/inf1.png" alt="2">
+                        <img class="infrastructure-item__back" src="../assets/img/ball.png" alt="2">
                         <div class="infrastructure-item__info">
                            <h5>Школа танцев, Футбольная секция.</h5>
                            <div class="info-infrastructure">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="infrastructure-right">
                      <div class="infrastructure-item">
-                        <img class="infrastructure-item__back" src="../assets/img/inf1.png" alt="3">
+                        <img class="infrastructure-item__back" src="../assets/img/inf3.png" alt="3">
                         <div class="infrastructure-item__info">
                            <h5>Школа с углубленным изучением отдельных предметов</h5>
                            <div class="info-infrastructure">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                      <div class="infrastructure-item">
-                        <img class="infrastructure-item__back" src="../assets/img/inf1.png" alt="3">
+                        <img class="infrastructure-item__back" src="../assets/img/inf4.png" alt="4">
                         <div class="infrastructure-item__info">
                            <h5>Коворкинги</h5>
                            <div class="info-infrastructure">

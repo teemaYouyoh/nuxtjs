@@ -93,6 +93,7 @@
     img{
         width: 100%;
         object-fit: cover;
+        transition: 0.5s;
     }
 }
  .prev{
@@ -149,5 +150,9 @@
                 }
             }
 
+     }
+     .interior-slide:hover img{
+         transform: scale(1.1);
+             transition: 0.5s;
      }
 </style>

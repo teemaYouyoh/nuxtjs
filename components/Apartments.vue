@@ -1,5 +1,5 @@
 <template>
-   <div class="apartments">
+   <div class="apartments example-classname">
        <div class="apartments-slider">
            <p>01</p>
            <p class="apartments-slider__current">02</p>

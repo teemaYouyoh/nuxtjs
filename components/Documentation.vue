@@ -1,5 +1,5 @@
 <template>
-  <div class="documents">
+  <div class="documents example-classname">
     <div class="documents_container _container">
       <p class="documents-subtitle">О КВАРТАЛЕ</p>
       <h3 class="documents-title">Документация</h3>
@@ -234,7 +234,7 @@ name: "Documentation"
       @media(max-width: 768px){
         font-size: 40px;
         padding-bottom: 60px;
-        font-family: "Aver-Medium";
+        font-family: "Avenir-heavy";
       }
       @media(max-width: 576px){
         font-size: 36px;
@@ -268,6 +268,11 @@ name: "Documentation"
         width: 23%;
         cursor: pointer;
         box-shadow: 0px 60px 90px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s;
+        &:hover{
+              margin-top: -50px;
+              transition: all 0.5s;
+        }
         @media(max-width: 1200px){
           width: 48%;
           margin-top: 20px;
@@ -285,7 +290,7 @@ name: "Documentation"
           }
         }
         .card-title{
-          font-family: "Aver-Medium";
+          font-family: "Avenir-heavy";
           font-style: normal;
           font-size: 24px;
           line-height: 130%;

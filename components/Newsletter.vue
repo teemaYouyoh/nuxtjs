@@ -67,6 +67,7 @@
 import Vue from 'vue'
 import { vsButton, vsSelect, vsPopup, vsRadio } from 'vuesax'
 import 'vuesax/dist/vuesax.css'
+import $ from "jquery";
 
 Vue.use(vsButton)
 Vue.use(vsSelect)
@@ -80,6 +81,20 @@ name: "Newsletter",
         popupActivo2:false,
     }
   },
+  mounted(){
+    $(`.vs-popup--close--icon`).bind('click', () => {
+      this.popupActivo = false;
+    });
+    $(document).ready(function() {
+      $("#btn-up").click(function (){
+        $("body").animate(
+          {
+            scrollTop: $(".apartments").offset().top
+          }, 800 //speed
+        );
+      });
+    });
+  }
 }
 </script>
 
