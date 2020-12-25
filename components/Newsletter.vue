@@ -42,7 +42,7 @@
                     <p>Коментарий</p>
                     <input type="text" placeholder="">
                     <div class="feedback-agree">
-                        <vs-radio v-model="radios1" vs-name="radios1" vs-value="Я согласен на обработку персональных данных"><span class="nes">Я согласен на обработку персональных данных</span></vs-radio>
+                        <vs-radio v-model="radios1"  vs-value="Я согласен на обработку персональных данных"><span class="nes">Я согласен на обработку персональных данных</span></vs-radio>
                     </div>
                     <!-- <button class="feedback-send" type="submit">Оставить заявку</button> -->
                     <vs-button class="feedback-send"   @click="(popupActivo2= true) && (popupActivo=false)"><span class="feedback-send">Оставить заявку</span></vs-button>
