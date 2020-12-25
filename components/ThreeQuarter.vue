@@ -137,7 +137,7 @@
          padding-bottom: 0px !important;
      }
     .quarter-about {
-         font-family: "Geometria-Bold";
+        font-family: "Geometria-Bold";
         font-weight: 800;
         font-size: 18px;
         line-height: 150%;

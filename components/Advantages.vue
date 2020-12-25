@@ -251,8 +251,7 @@ export default {
           transform: unset;
         }
         .title{
-        font-family: "Aver-Demi";
-
+          font-family: "Aver-Demi", sans-serif;
           font-style: normal;
           font-size: 72px;
           line-height: 110%;

@@ -12,6 +12,7 @@
       <Documentation />
       <Newsletter />
       <Footer />
+      <a class="call-us" href="#"><img  src="../assets/img/tel.svg" alt="tel"></a>
   </div>
 </template>
 
@@ -61,6 +62,9 @@ export default {
 </script>
 
 <style lang="scss">
+body{
+  position: relative;
+}
 .documents-wrapper .owl-stage{
         @media screen and (max-width: 560px) {
           right: 20px;
@@ -114,5 +118,11 @@ export default {
   }
   .feedback-form .vs-button--text{
     width: 80% !important;
+  }
+  .call-us{
+    position: fixed;
+    bottom: 40px;
+    left: 60px;
+    z-index: 999999;
   }
 </style>

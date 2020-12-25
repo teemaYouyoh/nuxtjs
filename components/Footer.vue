@@ -14,7 +14,6 @@
         <div class="footer-container _container">
           <div class="footer-wrap">
               <div class="footer-left">
-                  <a href="#"><img  src="../assets/img/tel.svg" alt="tel"></a>
                   <p>Все права защищены 2020.</p>
                   <button id="btn-up-footer" class="btn-up">
                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +50,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 0px 70px;
+        padding: 40px 0px 60px;
         position: relative;
         @media screen and (max-width: 560px){
             flex-direction: column;
@@ -120,6 +119,7 @@
     .footer-left {
         display: flex;
         align-items: center;
+        margin-left: 70px;
         a{
             outline: none;
         }

@@ -4,15 +4,17 @@
             <div class="header-wrap">
                   <div class="header-logo">
                <a href="#">
-                    <img src="../assets/img/logo.svg" alt="logo">
+                    <img class="header-logo__image" src="../assets/img/logo.svg" alt="logo">
+                    <img class="header-logo__image" src="../assets/img/logo2.svg" alt="logo">
+                    <img class="header-logo__image" src="../assets/img/logo3.svg" alt="logo">
+                    <img class="header-logo__image" src="../assets/img/logo4.svg" alt="logo">
                     <span>Три Квартала</span>
                </a>
            </div>
            <div class="header-menu header-menu__desktop">
                <nav>
                    <ul>
-                       <li><a class="header-menu__current scrollto" href="#">главная</a></li>
-                       <li><a class="scrollto" href="#about">о квартале</a></li>
+                       <li><a class=" header-menu__current scrollto" href="#about">о квартале</a></li>
                        <li><a href="#apartments" class="scrollto">Кварталы</a></li>
                        <li><a href="#location" class="scrollto">локация</a></li>
                        <li><a href="#advantages" class="scrollto">Преимущества</a></li>
@@ -104,8 +106,35 @@ export default {
           },
           800 //speed
         );
+      });
+      $("#btn-up-footer").click(function (){
+        $("body,html").animate(
+          {
+            scrollTop: $("#header").offset().top
+          },
+          800 //speed
+        );
+      });
+
+      $('.header-menu > nav > ul > li > a').on('click', function (){
+        $('.scrollto').removeClass('header-menu__current');
+        $(this).addClass('header-menu__current');
       })
-    });
+      $(window).scroll(function(){
+            if ($(this).scrollTop() > 120) {
+                $('.header').addClass('fixed').slideDown();
+            } else {
+                $('.header').removeClass('fixed');
+            }
+        });
+        $('.header-logo__image:first').addClass('is-current');
+            setInterval(function(){
+            var $next = $('.header-logo__image.is-current')
+                .removeClass('is-current')
+                .next('.header-logo__image');
+                $next.length ? $next.addClass('is-current') : $('.header-logo__image:first').addClass('is-current');
+            }, 1000);
+         });
   }
 }
 
@@ -139,9 +168,18 @@ export default {
             max-width: 80%;
         }
     }
+    .header.fixed{
+        width: 100%;
+        position: fixed;
+        padding: 12px 0px 12px;
+        box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.12);
+        transition: padding .5s ease-in;
+    }
     .header {
-        background: rgba(249, 249, 249, 0.98);
-        padding: 23px 0px 88px;
+           background: rgba(249, 249, 249, 0.98);
+            padding: 23px 0px 23px;
+            z-index: 999999;
+            
         @media screen and (max-width: 960px){
             padding: 20px 0px;
             background: #FFFFFF;
@@ -150,6 +188,9 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and (max-width: 1260px){
+                align-items: flex-start;
+            }
         }
         .header-wrap{
             display: flex;
@@ -157,12 +198,17 @@ export default {
             width: 70%;
              @media screen and (max-width: 1600px){
               width: 75%;
+              }
+            @media screen and (max-width: 1260px){
+                width: 91%;
             }
+    
         }
         .header-logo {
                 max-width: 160px;
                 width: 100%;
-                display: none;
+                margin-right: 30px;
+                position: relative;
             @media screen and (max-width: 1600px){
                margin-right: 30px;
             }
@@ -183,7 +229,7 @@ export default {
                     align-items: center;
                     letter-spacing: -0.03em;
                     color: #0B315E;
-
+                    margin-left: 40px;
                 }
             }
         }
@@ -193,7 +239,7 @@ export default {
             }
         }
         .header-menu {
-           max-width: 860px;
+           max-width: 750px;
             width: 100%;
             &__current{
                 color: #6544FB !important;
@@ -236,7 +282,6 @@ export default {
             }
         }
         .header-phone {
-            margin-top: 8px;
             @media screen and (max-width: 960px){
                 display: none;
             }
@@ -254,7 +299,7 @@ export default {
                 font-family: "Aver-Regular", sans-serif;
                 margin-right: 20px;
                 @media screen and (max-width: 1260px){
-                    margin-right: 10px;
+                    display: none;
                 }
                 &:hover{
                     background: #7e62fa;
@@ -477,4 +522,18 @@ export default {
            transition: all 0.3s;
         }
     }
+    .header-logo__image{
+        opacity: 0;
+        transition: opacity 1s;
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .is-current {
+        z-index:5;
+        opacity: 1;
+    }
+    
 </style>

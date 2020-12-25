@@ -21,12 +21,11 @@
             </button>
           </div>
           <button class="subscribe-btn">Подписаться на рассылку</button>
-          <!-- <a href="#" class="left-request">Оставить заявку</a> -->
-
-          <vs-button  @click="popupActivo=true"><span class="left-request">Оставить заявку</span></vs-button>
+          <a href="#" class="left-request">Оставить заявку</a>
           <p class="question-answers">Остались вопросы, звоните?</p>
           <p class="question-answers_media">Остались вопросы?</p>
-          <a href="tel:+88005005005" class="phone-number">8 800 500 500 5</a>
+          <!-- <a href="tel:+88005005005" class="phone-number">8 800 500 500 5</a> -->
+          <vs-button  @click="popupActivo=true"><span class="phone-number">8 800 500 500 5</span></vs-button>
         </div>
       </div>
     </div>
@@ -192,7 +191,7 @@ name: "Newsletter",
           height: 60px;
           width: 450px;
           padding: 18px 22px;
-          font-family: "Aver-Medium";
+         font-family: "Avenir-heavy";
           font-style: normal;
           font-weight: normal;
           font-size: 16px;

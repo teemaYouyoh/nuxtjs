@@ -1,5 +1,5 @@
 <template>
-   <div class="apartments example-classname">
+   <div class="apartments">
        <div class="apartments-slider">
            <p>01</p>
            <p class="apartments-slider__current">02</p>
@@ -9,7 +9,7 @@
        <div class="apartments_container _container">
            <div class="apartments-info">
             <p class="apartments-info__rate">ЖК 3 Квартала</p>
-            <h1 class="apartments-info__price">Квартиры 4,5 млн за 42 м2</h1>
+            <h1 class="apartments-info__price">Квартиры 4,5 млн за 42 м <sup>2</sup> </h1>
             <p class="apartments-info__distance">10 минут  от метро</p>
             <ul class="apartments-info__list">
                 <li><img src="../assets/img/li-point1.svg" alt="Домодедовская"><span>Домодедовская, Зябликов</span></li>
@@ -24,8 +24,8 @@
                </div>
                 <div class="apartments-blocks__item apartments-blocks__blue">
                    <img src="../assets/img/heart-icon.svg" alt="Благоустроенная территория ">
-                   <h4>50 <span>га.</span></h4>
-                   <p>Благоустроенная территория </p>
+                   <h4>3.5 <span>га.</span></h4>
+                   <p>Cчастливых семей.</p>
                </div>
            </div>
        </div>
@@ -33,11 +33,15 @@
 </template>
 
 <style lang="scss">
+sup{
+    vertical-align: super;
+    font-size: smaller;
+}
 .apartments {
    position: relative;
     background: rgba(249, 249, 249, 0.98) url(../assets/img/appartment.png) no-repeat bottom right;
     background-size: 61%;
-    padding: 0px 0px 336px;
+    padding: 100px 0px 336px;
      @media screen and (max-width: 1600px){
          padding-bottom: 150px;
      }
@@ -50,6 +54,7 @@
       position: absolute;
         top: 41%;
         left: 4%;
+        display: none;
         transform: translate(50%, -50%);
          @media screen and (max-width: 1600px){
            left: 0%;
@@ -78,7 +83,7 @@
             }
             &__green{
                 background: #00BA88;
-                margin-right: 11px;
+                margin-right: 13px;
                 @media screen and (max-width: 560px){
                     margin-right: 0px;
                 }
@@ -111,6 +116,10 @@
                      @media screen and (max-width: 768px){
                          font-size: 36px;
                         line-height: 49px;
+                     }
+                     span{
+                         font-size: 24px;
+                         line-height: 150%;
                      }
                 }
                 p{
@@ -185,9 +194,8 @@
 		// .apartments-info__price
 
 		&__price {
-            font-family: "Aver-Demi";
-
-            font-weight: 800;
+             font-family: "Avenir-heavy";
+             font-weight: 600;
             font-size: 72px;
             line-height: 110%;
             letter-spacing: -0.03em;

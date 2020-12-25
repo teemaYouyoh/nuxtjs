@@ -1,5 +1,5 @@
 <template>
-    <div class="interior example-classname">
+    <div class="interior">
         <div class="interior-container">
              <h3 class="interior-header">
                 Интерьерные решения для вашего удобства
