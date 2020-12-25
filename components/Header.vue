@@ -113,6 +113,11 @@ export default {
           800 //speed
         );
       });
+
+      $('.header-menu > nav > ul > li > a').on('click', function (){
+        $('.scrollto').removeClass('header-menu__current');
+        $(this).addClass('header-menu__current');
+      })
     });
   }
 }
