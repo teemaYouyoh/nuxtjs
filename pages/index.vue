@@ -50,6 +50,11 @@ export default {
           section : ".example-classname",
         });
       });
+      // $(() => {
+      //   $.scrollify({
+      //     section : ".quartal-scroll",
+      //   });
+      // });
     })
   },
   components: { Coworking, Infrastructure, Footer, }, }

@@ -3,7 +3,7 @@
         <div class="quarter-container">
                <no-ssr>
                     <carousel class="forest-carousel" :items="1" :nav="false" :loop="true">
-                        <div class="forest-slide">
+                        <div class="forest-slide quartal-scroll">
                             <h2 class="quarter-header">Лесной квартал</h2>
                         <div class="quarter-wrapper">
                             <div class="quarter-left">
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         </div>
-                        <div class="forest-slide">
+                        <div class="forest-slide quartal-scroll">
                             <h2 class="quarter-header">Водный квартал</h2>
                         <div class="quarter-wrapper">
                             <div class="quarter-left">
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                         </div>
-                        <div class="forest-slide">
+                        <div class="forest-slide quartal-scroll">
                             <h2 class="quarter-header">Городской квартал</h2>
                         <div class="quarter-wrapper">
                             <div class="quarter-left">
@@ -243,15 +243,12 @@ export default {
     active: false
   },
   mounted() {
-       $(document).ready(function (){
          $('.forest-itm__link').click(function (){
               let myChild = $(this).parent().children()[2];
-              $(myChild).toggle();
-             // $('.forest-sdr').toggle();
+            $(myChild).toggle();
             let icon = $(this).children()[0]
              $(icon).toggleClass('tran-scale');
          })
-       })
   }
 }
 </script>
