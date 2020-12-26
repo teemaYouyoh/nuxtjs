@@ -199,9 +199,9 @@ export default {
     }
    .coworking {
       background: #F9F9F9;
-      padding: 100px 0px 200px;
+      //padding: 100px 0px 200px;
       @media screen and (max-width: 560px){
-          padding: 60px 0px 70px;
+          //padding: 60px 0px 70px;
           background: #F2F9FF;
       }
        .owl-stage {
