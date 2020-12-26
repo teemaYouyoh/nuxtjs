@@ -6,7 +6,7 @@
       <h2 class="title-map-media">Мы находимся рядом с МКАД.</h2>
     </div>
     <div class="map-wrapper">
-      <div class="map-pointer left-top d-flex jc-sb al-item-fl-st">
+      <!-- <div class="map-pointer left-top d-flex jc-sb al-item-fl-st">
         <svg width="12" height="10" viewBox="0 0 12 10" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
           <path d="M2.29766 9.29449L1.31264 9.30541C0.895555 9.31004 0.562664 9.02218 0.570205 8.66341L0.678612 1.20647C0.683962 0.845808 1.0255 0.550465 1.44034 0.547781L10.066 0.452095C10.4831 0.447468 10.816 0.735329 10.8084 1.0941L10.7958 1.94589C10.7904 2.31039 10.4377 2.60777 10.0163 2.60478L4.79772 2.55333L11.092 7.99619C11.3833 8.24806 11.3772 8.65861 11.0783 8.91704L10.3593 9.53881C10.0604 9.79723 9.58567 9.8025 9.29439 9.55062L3.00013 4.10777L3.05962 8.62045C3.06528 8.98674 2.72137 9.2917 2.29766 9.29449Z" fill="white"/>
         </svg>
@@ -59,18 +59,32 @@
         <div class="info">
           <p class="title">Каширское шоссе</p>
         </div>
-      </div>
-      <iframe id="my-map" src="https://snazzymaps.com/embed/281503" width="100%" height="676px" style="border:none;"></iframe>
+      </div> -->
+          <iframe id="my-map"  src="https://snazzymaps.com/embed/281503" width="100%" height="550px" style="border:none;"></iframe>
     </div>
   </div>
 </template>
 
 <script>
+import $ from "jquery";
 export default {
-name: "Map"
+name: "Map",
+mounted: () =>{
+    $('.map-wrapper').on( "click", function() {
+        $('iframe').addClass("scroll");
+    });
+  }
 }
 </script>
 
 <style scoped>
-
+iframe{
+  pointer-events: none;
+}
+.map-wrapper{
+  cursor: pointer;
+}
+iframe.scroll{
+  pointer-events:inherit;
+}
 </style>

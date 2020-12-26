@@ -45,6 +45,10 @@ sup{
      @media screen and (max-width: 1600px){
          padding-bottom: 150px;
      }
+     @media screen and (max-width: 1024px){
+         background: #fff url(../assets/img/tablet.png) no-repeat bottom right;
+        background-size: contain;
+     }
      @media screen and (max-width: 560px){
         background: rgba(249, 249, 249, 0.98) url(../assets/img/bg-mob.png) no-repeat bottom right;
         background-size: cover;
@@ -78,12 +82,26 @@ sup{
             bottom: 0px;
             left: 56%;
             transform: translate(-50%, 0%);
+            @media screen and (max-width: 1024px){
+                right: -12.5%;
+                left: unset;
+            }
+            @media screen and (max-width: 960px){
+                  right: -4.5%;
+            }
+             @media screen and (max-width: 850px){
+                  right: -5.5%;
+            }
             @media screen and (max-width: 560px){
                 left: 50%;
+                right: unset;
             }
             &__green{
                 background: #00BA88;
                 margin-right: 13px;
+                @media screen and (max-width: 960px){
+                    margin-right: 16px;
+                }
                 @media screen and (max-width: 560px){
                     margin-right: 0px;
                 }
@@ -96,6 +114,9 @@ sup{
             &__item {
                 max-width: 207px;
                 padding: 20px;
+                @media screen and (max-width: 960px){
+                    width: 176px;
+                }
                 @media screen and (max-width: 560px){
                     padding: 15px;
                     max-width: 145px;

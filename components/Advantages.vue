@@ -245,7 +245,7 @@ export default {
     .advantages_wrapper{
       //max-height: 800px;
       .left{
-        transform: translate(0, 292px);
+        transform: translate(0, 150px);
         width: 48%;
         @media screen and (max-width: 960px){
           transform: unset;
@@ -289,7 +289,7 @@ export default {
         }
       }
       .right{
-        transform: translate(0, 205px);
+        transform: translate(0, 70px);
         width: 48%;
         .right-pic{
         }

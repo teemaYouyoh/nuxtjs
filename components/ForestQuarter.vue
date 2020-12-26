@@ -243,12 +243,15 @@ export default {
     active: false
   },
   mounted() {
-         $('.forest-itm__link').click(function (){
-              let myChild = $(this).parent().children()[2];
-            $(myChild).toggle();
-            let icon = $(this).children()[0]
-             $(icon).toggleClass('tran-scale');
-         })
+        //  $('.forest-itm__link').click(function (){
+        //       let myChild = $(this).parent().children()[2];
+        //     $(myChild).toggle();
+        //     let icon = $(this).children()[0]
+        //      $(icon).toggleClass('tran-scale');
+        //  })
+        $('.forest-itm__link').on( "click", function() {
+           $(this).next().slideToggle();
+        });
         if(screen.width <= 768){
             $('.example-classname').removeClass('example-classname');
         }
@@ -261,6 +264,7 @@ export default {
 }
 .tran-scale{
   transform: scale(1,-1);
+  transition: all 0.5s;
 }
     ._container{
         max-width: 73%;
@@ -302,6 +306,7 @@ export default {
                 max-width: 122px;
                 padding: 15px;
                 margin: 0 16px 0px 0px;
+                height: 170px;
             }
              .owl-stage {
                 right: 20px;
@@ -423,7 +428,7 @@ export default {
      }
 }
 .quarter {
-    padding: 250px 0px 100px;
+    padding: 150px 0px 100px;
       @media screen and (max-width: 960px){
             padding:40px 0px;
         }

@@ -51,7 +51,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 0px 60px;
+        padding: 30px 0px 30px;
         position: relative;
         @media screen and (max-width: 560px){
             flex-direction: column;
