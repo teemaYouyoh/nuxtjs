@@ -66,6 +66,7 @@ export default {
 <style lang="scss">
 body{
   position: relative;
+  overflow-x: hidden;
 }
 .documents-wrapper .owl-stage{
         @media screen and (max-width: 560px) {
