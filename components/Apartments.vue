@@ -1,283 +1,505 @@
 <template>
-   <div class="apartments example-classname display">
-       <div class="apartments-slider">
-           <p>01</p>
-           <p class="apartments-slider__current">02</p>
-           <p>03</p>
-           <p>04</p>
-       </div>
-       <div class="apartments_container _container">
-           <div class="apartments-info">
-            <p class="apartments-info__rate">ЖК 3 Квартала</p>
-            <h1 class="apartments-info__price">Квартиры 4,5 млн за 42 м <sup>2</sup> </h1>
-            <p class="apartments-info__distance">10 минут  от метро</p>
-            <ul class="apartments-info__list">
-                <li><img src="../assets/img/li-point1.svg" alt="Домодедовская"><span>Домодедовская, Зябликов</span></li>
-                <li><img src="../assets/img/li-point2.svg" alt="Красногвардейская"> <span>Красногвардейская</span></li>
-            </ul>
-           </div>
-           <div class="apartments-blocks">
-               <div class="apartments-blocks__item apartments-blocks__green">
-                   <img src="../assets/img/home-icon.svg" alt="Благоустроенная территория ">
-                   <h4>50 <span>га.</span></h4>
-                   <p>Благоустроенная территория </p>
-               </div>
-                <div class="apartments-blocks__item apartments-blocks__blue">
-                   <img src="../assets/img/heart-icon.svg" alt="Благоустроенная территория ">
-                   <h4>3.5 <span>га.</span></h4>
-                   <p>Cчастливых семей.</p>
-               </div>
-           </div>
-       </div>
-   </div>
+<div id="firstDisplay" class="firstDisplay display section fp-section active fp-completely" data-fp-styles="null" style="height: 1026px;">
+        <div class="leftBlock">
+            <div class="content">
+                <span class="title">
+                    ЖК 3 Квартала
+                </span>
+
+                <span class="heading">
+                    Квартиры 4,5 <span>млн</span> <br>  за 42 м<sup>2</sup>
+                </span>
+                <br>
+                <span class="menuTitle">
+                    10 минут  от метро
+                </span>
+
+                <ul>
+                    <li>Домодедовская, Зябликово </li>
+                    <li>Красногвардейская</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rightBlock">
+            <div class="left">
+                <div class="card">
+                    <span class="img">
+                        <img src="../assets/Img/home-icon.svg" alt="">
+                    </span>
+                    <span class="Big">
+                        50
+                        <span>
+                            га.
+                        </span>
+                    </span>
+
+                    <span class="small">
+                        Благоустроенная территория
+                    </span>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="card">
+                    <span class="img">
+                        <img src="../assets/Img/heart-icon.svg" alt="">
+                    </span>
+                    <span class="Big">
+                        3.5
+                        <span>
+                            т.
+                        </span>
+                    </span>
+
+                    <span class="small">
+                        Cчастливых  <br> семей.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style lang="scss">
-sup{
-    vertical-align: super;
-    font-size: smaller;
-}
-.apartments {
-   position: relative;
-    background: rgba(249, 249, 249, 0.98) url(../assets/img/appartment.png) no-repeat bottom right;
-    background-size: 61%;
-    padding: 0px 0px 336px;
-     @media screen and (max-width: 1600px){
-         padding-bottom: 150px;
-     }
-     @media screen and (max-width: 1024px){
-         background: #fff url(../assets/img/tablet.png) no-repeat bottom right;
-        background-size: contain;
-     }
-     @media screen and (max-width: 560px){
-        background: rgba(249, 249, 249, 0.98) url(../assets/img/bg-mob.png) no-repeat bottom right;
-        background-size: cover;
-     }
-
-    .apartments-slider {
-      position: absolute;
-        top: 41%;
-        left: 4%;
-        display: none;
-        transform: translate(50%, -50%);
-         @media screen and (max-width: 1600px){
-           left: 0%;
-        }
-        // .partments-slider__current
-
-            &__current {
-                font-weight: 900;
-                font-size: 48px;
-                line-height: 150%;
-                letter-spacing: -0.03em;
-                color: #0B315E;
-                 @media screen and (max-width: 1600px){
-                    font-size: 32px;
-                }
-            }
-    }
-     .apartments-blocks {
+.firstDisplay{
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+        .leftBlock{
+            position: relative;
             display: flex;
-            position: absolute;
-            bottom: 0px;
-            left: 56%;
-            transform: translate(-50%, 0%);
-            @media screen and (max-width: 1024px){
-                right: -12.5%;
-                left: unset;
-            }
-            @media screen and (max-width: 960px){
-                  right: -4.5%;
-            }
-             @media screen and (max-width: 850px){
-                  right: -5.5%;
-            }
-            @media screen and (max-width: 560px){
-                left: 50%;
-                right: unset;
-            }
-            &__green{
-                background: #00BA88;
-                margin-right: 13px;
-                @media screen and (max-width: 960px){
-                    margin-right: 16px;
-                }
-                @media screen and (max-width: 560px){
-                    margin-right: 0px;
-                }
-            }
-            &__blue{
-                background: #0B315E;
-            }
-		// .apartments-blocks__item
-
-            &__item {
-                max-width: 207px;
-                padding: 20px;
-                @media screen and (max-width: 960px){
-                    width: 176px;
-                }
-                @media screen and (max-width: 560px){
-                    padding: 15px;
-                    max-width: 145px;
-                }
-                img{
-                    margin-bottom: 15px;
-                }
-                h4{
-                    font-weight: 800;
-                    font-size: 48px;
-                    line-height: 150%;
-                    letter-spacing: -0.03em;
-                    color: #FFFFFF;
-                    margin-bottom: 10px;
-                    @media screen and (max-width: 1600px){
-                        font-size: 40px;
-                    }
-                     @media screen and (max-width: 768px){
-                         font-size: 36px;
-                        line-height: 49px;
-                     }
-                     span{
-                         font-size: 24px;
-                         line-height: 150%;
-                     }
-                }
-                p{
+            z-index: 50;
+            width: 605px;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            .content{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .title{
+                    font-family: "Geometria", sans-serif;
+                    font-style: normal;
                     font-weight: 800;
                     font-size: 18px;
                     line-height: 150%;
+                    /* identical to box height, or 27px */
+
+                    display: flex;
+                    align-items: center;
                     letter-spacing: -0.03em;
-                    color: #FFFFFF;
-                     @media screen and (max-width: 768px){
-                         font-size: 14px;
-                     }
+                    margin-top: -80px;
+
+                    /* Grayscale / Title-Active */
+
+                    color: #14142B;
+                }
+
+                .heading{
+                    font-family:"Avenir-bold", sans-serif;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 63px;
+                    //CHANGE LATER TO 72PX
+                    line-height: 120%;
+
+                    width: 700px;
+                    /* or 79px */
+                    margin-top: 31px !important;
+                    letter-spacing: -0.03em;
+
+                    color: #0B315E;
+                }
+                width: 100%;
+                height: 100%;
+
+                .menuTitle{
+                    font-family: "Geometria", sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 150%;
+                    /* identical to box height, or 36px */
+                    margin-top: 40px;
+                    letter-spacing: -0.03em;
+
+                    /* Grayscale / Title-Active */
+
+                    color: #14142B;
+                }
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    height: 0;
+                    list-style-type: none;
+                    li{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            left: -25px;
+                            align-self: center;
+                            background: #0A6F20;
+                            border-radius: 50%;
+                        }
+                        margin-top: 15px;
+                        margin-left: 25px;
+                        font-family: "Geometria", sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 150%;
+                        /* identical to box height, or 27px */
+
+
+                        /* Темный */
+
+                        color: #0B315E;
+                    }
                 }
             }
-    }
-
-}
-.apartments-slider {
-     @media screen and (max-width: 960px){
-         display: none;
-     }
-    p{
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 150%;
-        display: flex;
-        align-items: center;
-        letter-spacing: -0.03em;
-        color: #BDBDBD;
-        margin-bottom: 40px;
-         font-family: "Aver-Bold";
-          @media screen and (max-width: 1600px){
-            font-size: 18px;
-            margin-bottom: 25px;
         }
-    }
-}
 
-
-    ._container{
-        max-width: 73%;
-        margin: 0 auto;
-        @media screen and (max-width: 1600px){
-            max-width: 80%;
-        }
-    }
-.apartments-info {
-    padding-top: 188px;
-    @media screen and (max-width: 1600px){
-         padding-top: 130px;
-    }
-    @media screen and (max-width: 960px){
-        padding-bottom: 100px;
-    }
-    @media screen and (max-width: 560px){
-        padding-top: 100px;
-    }
-		// .apartments-info__rate
-
-		&__rate {
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 150%;
-            letter-spacing: -0.03em;
-            color: #14142B;
-            font-family: "Geometria-Medium", sans-serif;
-            margin-bottom: 30px;
-            @media screen and (max-width: 768px){
-                display: none;
-            }
-		}
-
-		// .apartments-info__price
-
-		&__price {
-             font-family: "Avenir-heavy";
-             font-weight: 600;
-            font-size: 72px;
-            line-height: 110%;
-            letter-spacing: -0.03em;
-            color: #0B315E;
-            max-width: 650px;
-            margin-bottom: 43px;
-            @media screen and (max-width: 1600px){
-               font-size: 60px;
-               max-width: 550px;
-            }
-             @media screen and (max-width: 960px){
-                 font-size: 48px;
-                 max-width: 400px;
-                 margin-bottom: 40px;
-             }
-             @media screen and (max-width: 768px){
-                 font-size: 36px;
-                 max-width: 300px;
-                 margin-bottom: 30px;
-             }
-		}
-
-		// .apartments-info__distance
-
-		&__distance {
-            font-size: 24px;
-            line-height: 150%;
-            letter-spacing: -0.03em;
-            color: #14142B;
-             font-family: "Geometria-Medium", sans-serif;
-             margin-bottom: 13px;
-            @media screen and (max-width: 768px){
-                font-size: 18px;
-                line-height: 150%;
-                margin-bottom: 10px;
-            }
-		}
-
-		// .apartments-info__list
-
-		&__list {
-            li{
-                 font-family: "Geometria-Bold";
+        position: relative;
+        .rightBlock{
+            width: 100%;
+            z-index: 10;
+            height: 100%;
+            position: absolute;
+            right: -255px;
+            bottom: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .left{
                 display: flex;
-                align-items: center;
-                font-size: 18px;
-                line-height: 150%;
-                color: #0B315E;
-                margin-bottom: 10px;
-                @media screen and (max-width: 768px){
-                    font-size: 14px;
-                    margin-bottom: 5px;
+                justify-content: flex-end;
+                align-items: flex-end;
+                width: 330px;
+                height:747px;
+                background-image: url('../assets/Img/display1left.png');
+                background-repeat: repeat-x;
+                background-size: cover;
+                .card{
+                    width: 62.7%;
+                    height: 29.48%;
+                    min-width: 217px;
+                    min-height: 207px;
+                    background: #00BA88;
+                    padding: 32px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .Big{
+                        display: flex;
+                        align-items: flex-end;
+                        font-family: "Avenir-heavy", sans-serif;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 48px;
+                        line-height: 150%;
+                        /* identical to box height, or 72px */
+
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.03em;
+
+                        /* Белый */
+
+                        color: #FFFFFF;
+                        span{
+                            margin-top: 14px;
+                            font-size: 24px;
+                        }
+                    }
+                    .small{
+                        font-family: "Avenir-heavy", sans-serif;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 18px;
+                        line-height: 150%;
+                        /* or 27px */
+
+                        display: flex;
+                        align-items: center;
+
+                        /* Белый */
+
+                        color: #FFFFFF;
+                    }
                 }
-                img{
-                    margin-right: 15px;
-                    @media screen and (max-width: 768px){
-                        margin-right: 10px;
+
+            }
+
+            .right{
+                margin-left: 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                width: 825px;
+                height: 909px;
+                background-image: url('../assets/Img/display1right.png');
+                background-repeat: repeat-x;
+                background-size: cover;
+                .card{
+                    width: 25%;
+                    height: 24.3%;
+                    min-width: 217px;
+                    min-height: 207px;
+                    background: #0B315E;
+                    padding: 32px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .Big{
+                        display: flex;
+                        align-items: flex-end;
+                        font-family: "Avenir", sans-serif;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 48px;
+                        line-height: 150%;
+                        /* identical to box height, or 72px */
+
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.03em;
+
+                        /* Белый */
+
+                        color: #FFFFFF;
+                        span{
+                            margin-top: 14px;
+                            font-size: 24px;
+                        }
+                    }
+                    .small{
+                        font-family: "Avenir-heavy", sans-serif;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 18px;
+                        line-height: 150%;
+                        /* or 27px */
+
+                        display: flex;
+                        align-items: center;
+
+                        /* Белый */
+
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            align-self: flex-end;
+        }
+    }
+
+
+
+
+
+
+@media(max-width:1500px){
+  .firstDisplay{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 50px;
+    }
+}
+
+
+
+
+@media(max-width:1199px){
+  .firstDisplay{
+            height: 100%;
+            .leftBlock{
+                width: 100%;
+            }
+            .rightBlock{
+                background:url('../assets/Img/display1mobile.png');
+                background-size: cover;
+
+                position: absolute;
+                width: 100%;
+                left:0;
+                right: 0;
+                .left{
+                    height: 100%;
+                    width: 50%;
+                    background:none;
+                    .card{
+                        width: 25%;
+                        height: 24.3%;
+                    }
+                }
+                .right{
+                    height: 100%;
+                    background:none;
+                    width: 50%;
+                margin-left: 0;                }
+            }
+        }
+
+  .firstDisplay{
+            padding: 0 15px;
+            .leftBlock{
+                .content{
+                    .title{
+                        display: none;
+                    }
+                    .heading{
+                        margin-top: -120px !important;
+
+                        font-family: "Avenir", sans-serif;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 36px;
+                        line-height: 90%;
+                        /* or 43px */
+
+                        letter-spacing: -0.03em;
+
+                        /* Темный */
+
+                        color: #0B315E;
+                        span{
+                            font-size: 30px;
+                        }
+                    }
+
+                    .menuTitle{
+                        margin-top: 20px;
+                        font-family: "Geometria", sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 150%;
+                        /* identical to box height, or 27px */
+
+                        letter-spacing: -0.03em;
+
+                        /* Grayscale / Title-Active */
+
+                        color: #14142B;
+                    }
+
+                    ul{
+                        li{
+                            font-family: "Geometria", sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 150%;
+                            /* identical to box height, or 21px */
+                            margin-top: 2px;
+                            letter-spacing: -0.03em;
+
+                            /* Grayscale / Title-Active */
+
+                            color: #14142B;
+                        }
+                    }
+                }
+            }
+
+            .rightBlock{
+                padding: 0 15px;
+                box-sizing: border-box;
+                .left{
+                    .card{
+                        box-sizing: border-box;
+                        padding:10px 14px 0;
+                        min-width: 145px;
+                        min-height: 150px;
+                        width: 100%;
+                        justify-content: center ;
+                        .Big{
+                            font-size: 36px;
+                            line-height: 100%;
+                            span{
+                                margin-top: 8px;
+                            }
+                        }
+                        .small{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .right{
+                    .card{
+                        justify-content: center !important;
+                        box-sizing: border-box;
+                        padding:10px 14px 0;
+                        min-width: 145px;
+                        min-height: 150px;
+                        width: 100%;
+                        .Big{
+                            font-size: 36px;
+                            line-height: 100%;
+                            span{
+                                margin-top: 8px;
+                            }
+                        }
+                        .small{
+                            font-size: 14px;
+                        }
                     }
                 }
             }
         }
 }
 
+
+
+@media(max-width:700px){
+    .firstDisplay{
+        padding: 0 25px;
+        .leftBlock{
+            .content{
+                .heading{
+                    width: 100%;
+                    span{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+.firstDisplay{
+        padding: 0 25px;
+        .leftBlock{
+            .content{
+                .title{
+                    margin-top: -160px;
+                }
+                .heading{
+                    font-size: 56px;
+                    span{
+                        font-size: 46px;
+                    }
+                }
+            }
+        }
+    }
+}
 </style>

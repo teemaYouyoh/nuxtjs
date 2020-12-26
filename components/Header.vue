@@ -32,9 +32,10 @@
                <a href="#"><img class="mob-tel" src="../assets/img/mobile-tel.svg" alt="phone"></a>
                <nav>
                    <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
                     <label class="menu__btn" for="menu__toggle">
-                        <span></span>
+                        <div class="menuButton">
+                          <span></span>
+                      </div>
                     </label>
                     <ul class="menu__box">
                         <li class="menu__box-fisrt"><a href="#"><img  src="../assets/img/circle1.svg" alt="logo"></a>
@@ -180,7 +181,16 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("header-menu__current");
    }
 });
+
+
+
+$('.menuButton').click((e)=>{
+  e.preventDefault();
+  $('.menuButton').toggleClass('active');
+    $('.menu__box').toggleClass('activeMobileMenu');
+})
   }
+
 }
 
 </script>
@@ -380,37 +390,56 @@ $(window).scroll(function(){
         display: flex;
         align-items: center;
         position: absolute;
-        top: 18px;
-        right: 20px;
         width: 26px;
         height: 26px;
         cursor: pointer;
         z-index: 90999;
+        .menuButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+            transition: 0.2s;
+            &:hover{
+                cursor: pointer;
+            }
+            span, &::before,  &::after{
+                background: #0B315E;
+                width: 32px;
+                height: 4px;
+                border-radius: 8px;
+                transition: 0.4s;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                transform: translateY(-10px);
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                transform: translateY(10px);
+            }
+            }
+
+            .active{
+            span{
+            visibility: hidden;
+            transform: rotate(90deg);
+            background:rgba(11,49,94,0);
+            }
+            &::before{
+            transform: rotate(-45deg);
+            }
+
+            &::after{
+            transform: rotate(45deg);
+            }
+        }
     }
-    .menu__btn > span{
-        transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.55s ease;
-    }
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        border-radius: 6px;
-        background-color: #0B315E;
-    }
-    .menu__btn > span::before {
-    content: '';
-    top: -8px;
-    }
-    .menu__btn > span::after {
-    content: '';
-    top: 8px;
-    }
+
     .menu__box {
         display: block;
         position: fixed;
@@ -445,25 +474,11 @@ $(window).scroll(function(){
         color: #6544FB;
         transition: all 0.3s;
     }
-    #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg) ;
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
+
+   .activeMobileMenu {
     visibility: visible;
     left: 0;
     transition: all 0.5s;
-    }
-   #menu__toggle:checked ~  .menu__btn {
-        position: fixed;
-        top: 12px;
     }
     .menu__box-last{
         display: flex;
