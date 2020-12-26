@@ -44,14 +44,14 @@
                         </div>
                         </li>
                         <li><a class="menu__item menu__item-current" href="#">Главная</a></li>
-                        <li><a class="menu__item" href="#">О Квартале</a></li>
-                        <li><a class="menu__item" href="#">Лесной Квартал</a></li>
-                        <li><a class="menu__item" href="#">Водный Квартал</a></li>
-                        <li><a class="menu__item" href="#">Городской Квартал</a></li>
-                        <li><a class="menu__item" href="#">Локация</a></li>
-                        <li><a class="menu__item" href="#">Преимущества</a></li>
-                        <li><a class="menu__item" href="#">Инфраструктура</a></li>
-                        <li><a class="menu__item menu__item-next" href="#">Контакты</a></li>
+                        <li><a class="menu__item scrollto" href="#about">О Квартале</a></li>
+                        <li><a class="menu__item scrollto" href="#apartments">Лесной Квартал</a></li>
+                        <li><a class="menu__item scrollto" href="#apartments">Водный Квартал</a></li>
+                        <li><a class="menu__item scrollto" href="#apartments">Городской Квартал</a></li>
+                        <li><a class="menu__item scrollto" href="#location">Локация</a></li>
+                        <li><a class="menu__item scrollto" href="#advantages">Преимущества</a></li>
+                        <li><a class="menu__item scrollto" href="#infrastructure">Инфраструктура</a></li>
+                        <li><a class="menu__item scrollto menu__item-next" href="#contacts">Контакты</a></li>
                         <li class="menu__box-last"><a class="menu__box-tel" href="tel:+88005005005">8 800 500 500 5</a>
                             <div class="menu__box-social">
                                 <a href="#">
