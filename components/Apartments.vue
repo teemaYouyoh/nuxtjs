@@ -25,7 +25,7 @@
             <div class="left">
                 <div class="card">
                     <span class="img">
-                        <img src="../assets/Img/home-icon.svg" alt="">
+                        <img src="../assets/img/home-icon.svg" alt="">
                     </span>
                     <span class="Big">
                         50
@@ -43,7 +43,7 @@
             <div class="right">
                 <div class="card">
                     <span class="img">
-                        <img src="../assets/Img/heart-icon.svg" alt="">
+                        <img src="../assets/img/heart-icon.svg" alt="">
                     </span>
                     <span class="Big">
                         3.5
@@ -184,7 +184,7 @@
                 align-items: flex-end;
                 width: 330px;
                 height:747px;
-                background-image: url('../assets/Img/display1left.png');
+                background-image: url('../assets/img/display1left.png');
                 background-repeat: repeat-x;
                 background-size: cover;
                 .card{
@@ -250,7 +250,7 @@
                 align-items: flex-end;
                 width: 825px;
                 height: 909px;
-                background-image: url('../assets/Img/display1right.png');
+                background-image: url('../assets/img/display1right.png');
                 background-repeat: repeat-x;
                 background-size: cover;
                 .card{
@@ -334,7 +334,7 @@
                 width: 100%;
             }
             .rightBlock{
-                background:url('../assets/Img/display1mobile.png');
+                background:url('../assets/img/display1mobile.png');
                 background-size: cover;
 
                 position: absolute;
