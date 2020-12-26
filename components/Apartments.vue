@@ -41,7 +41,7 @@ sup{
    position: relative;
     background: rgba(249, 249, 249, 0.98) url(../assets/img/appartment.png) no-repeat bottom right;
     background-size: 61%;
-    padding: 100px 0px 336px;
+    padding: 0px 0px 336px;
      @media screen and (max-width: 1600px){
          padding-bottom: 150px;
      }

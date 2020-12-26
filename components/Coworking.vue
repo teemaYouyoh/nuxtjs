@@ -183,7 +183,7 @@ export default {
 
 
     .coworking-slide{
-        padding-left: 200px;
+        padding-left: 235px;
         @media screen and (max-width: 1600px){
             padding-left: 100px;
         }

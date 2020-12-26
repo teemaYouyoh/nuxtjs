@@ -123,7 +123,7 @@ body{
   }
   .call-us{
     position: fixed;
-    bottom: 40px;
+    bottom: 0px;
     left: 60px;
     z-index: 999999;
   }

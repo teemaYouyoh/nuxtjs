@@ -270,7 +270,7 @@ export default {
         }
     }
     .forest-slide{
-        padding: 0px 0px 0px 250px;
+        padding: 0px 0px 0px 235px;
         @media screen and (max-width: 1600px){
             padding: 0px 0px 0px 100px;
         }
