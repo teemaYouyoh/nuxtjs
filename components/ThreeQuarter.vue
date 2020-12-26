@@ -124,18 +124,18 @@
         }
     }
 .quarter {
-    padding: 150px 0px 0px;
+    //padding: 150px 0px 0px;
     background: #F5F5F7;
     @media screen and (max-width: 960px){
-        padding: 80px 0px 0px;
+        //padding: 80px 0px 0px;
         background: #f9f9f9;
     }
-     @media screen and (max-width: 560px){
-         padding-bottom: 100px !important;
-     }
-     @media screen and (max-width: 400px){
-         padding-bottom: 0px !important;
-     }
+     //@media screen and (max-width: 560px){
+     //    padding-bottom: 100px !important;
+     //}
+     //@media screen and (max-width: 400px){
+     //    padding-bottom: 0px !important;
+     //}
     .quarter-about {
         font-family: "Geometria-Bold";
         font-weight: 800;

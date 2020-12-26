@@ -177,16 +177,16 @@ name: "Documentation"
       align-items: center;
       letter-spacing: -0.03em;
       color: #0B315E;
-      padding-top: 165px;
+      //padding-top: 165px;
       padding-bottom: 32px;
       @media(max-width: 1200px){
-        padding-top: 110px;
+        //padding-top: 110px;
       }
       @media (max-width: 768px) {
-        padding-top: 80px;
+        //padding-top: 80px;
       }
       @media (max-width: 576px) {
-        padding-top: 72px;
+        //padding-top: 72px;
         padding-bottom: 13px;
       }
     }
@@ -253,9 +253,9 @@ name: "Documentation"
       }
     }
     .documents-wrapper{
-      padding-bottom: 108px;
+      //padding-bottom: 108px;
       @media(max-width: 576px){
-        padding-bottom: 54px;
+        //padding-bottom: 54px;
       }
       .card:hover{
         background: #6544FB;

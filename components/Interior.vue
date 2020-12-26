@@ -34,15 +34,15 @@
 </script>
 <style lang="scss">
 .interior {
-    padding: 200px 0px 0px;
+    //padding: 200px 0px 0px;
      @media screen and (max-width: 1600px){
-         padding: 150px 0px 0px;
+         //padding: 150px 0px 0px;
      }
       @media screen and (max-width: 960px){
           padding-top: 0px;
       }
        @media screen and (max-width: 560px){
-           padding-bottom: 100px;
+           //padding-bottom: 100px;
        }
     .owl-stage {
         right: 70px !important;

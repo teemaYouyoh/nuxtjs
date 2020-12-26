@@ -428,9 +428,9 @@ export default {
      }
 }
 .quarter {
-    padding: 150px 0px 100px;
+    //padding: 150px 0px 100px;
       @media screen and (max-width: 960px){
-            padding:40px 0px;
+            //padding:40px 0px;
         }
     .quarter-about {
          font-family: "Geometria-Bold";
