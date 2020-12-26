@@ -120,13 +120,13 @@ export default {
     //     $('.scrollto').removeClass('header-menu__current');
     //     $(this).addClass('header-menu__current');
     //   })
-      // $(window).scroll(function(){
-      //       if ($(this).scrollTop() > 0) {
-      //           $('.header').addClass('fixed').slideDown();
-      //       } else {
-      //           $('.header').removeClass('fixed');
-      //       }
-      //   });
+      $(window).scroll(function(){
+            if ($(this).scrollTop() > 60) {
+                $('.header').addClass('fixed').slideDown();
+            } else {
+                $('.header').removeClass('fixed');
+            }
+        });
         $('.header-logo__image:first').addClass('is-current');
             setInterval(function(){
             var $next = $('.header-logo__image.is-current')
@@ -214,13 +214,11 @@ $(window).scroll(function(){
         }
     }
     .header.fixed{
-        width: 100%;
-        position: fixed;
-        padding: 14px 0px 14px;
+        height: 90px;
         box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.12);
-        transition: padding .5s ease-in;
     }
     .header {
+            transition: 0.5s;
            background: rgba(249, 249, 249, 0.98);
             padding: 14px 0px 14px;
             z-index: 999999;
