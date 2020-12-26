@@ -1,6 +1,6 @@
 <template>
-    <div class="interior">
-        <div class="interior-container">
+    <div class="interior display">
+        <div class="interior-container ">
              <h3 class="interior-header">
                 Интерьерные решения для вашего удобства
             </h3>

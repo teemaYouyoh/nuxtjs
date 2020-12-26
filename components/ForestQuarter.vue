@@ -1,5 +1,5 @@
 <template>
-    <div id="apartments" class="quarter forest example-classname">
+    <div id="apartments" class="quarter forest example-classname display">
         <div class="quarter-container">
                <no-ssr>
                     <carousel class="forest-carousel" :items="1" :nav="false" :loop="true">

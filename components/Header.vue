@@ -69,10 +69,10 @@
                </nav>
            </div>
         </div>
-            
+
       <!-- <Feedback /> -->
     </div>
-    
+
 </template>
 
 <script>
@@ -120,20 +120,20 @@ export default {
     //     $('.scrollto').removeClass('header-menu__current');
     //     $(this).addClass('header-menu__current');
     //   })
-      $(window).scroll(function(){
-            if ($(this).scrollTop() > 120) {
-                $('.header').addClass('fixed').slideDown();
-            } else {
-                $('.header').removeClass('fixed');
-            }
-        });
+      // $(window).scroll(function(){
+      //       if ($(this).scrollTop() > 0) {
+      //           $('.header').addClass('fixed').slideDown();
+      //       } else {
+      //           $('.header').removeClass('fixed');
+      //       }
+      //   });
         $('.header-logo__image:first').addClass('is-current');
             setInterval(function(){
             var $next = $('.header-logo__image.is-current')
                 .removeClass('is-current')
                 .next('.header-logo__image');
                 $next.length ? $next.addClass('is-current') : $('.header-logo__image:first').addClass('is-current');
-            }, 1000);
+            }, 2000);
          });
          // Cache selectors
 var lastId,
@@ -152,7 +152,7 @@ var lastId,
 menuItems.click(function(e){
   var href = $(this).attr("href"),
       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({ 
+  $('html, body').stop().animate({
       scrollTop: offsetTop
   }, 300);
   e.preventDefault();
@@ -162,7 +162,7 @@ menuItems.click(function(e){
 $(window).scroll(function(){
    // Get container scroll position
    var fromTop = $(this).scrollTop()+topMenuHeight;
-   
+
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
      if ($(this).offset().top < fromTop)
@@ -171,14 +171,14 @@ $(window).scroll(function(){
    // Get the id of the current element
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
-   
+
    if (lastId !== id) {
        lastId = id;
        // Set/remove active class
        menuItems
          .parent().removeClass("header-menu__current")
          .end().filter("[href='#"+id+"']").parent().addClass("header-menu__current");
-   }                   
+   }
 });
   }
 }
@@ -224,7 +224,12 @@ $(window).scroll(function(){
            background: rgba(249, 249, 249, 0.98);
             padding: 14px 0px 14px;
             z-index: 999999;
-            
+            width: 100%;
+            position: fixed;
+            padding: 0;
+            height: 100px;
+            display: flex;
+            align-items: center;
         @media screen and (max-width: 1024px){
             padding: 20px 0px;
             background: #FFFFFF;
@@ -233,8 +238,9 @@ $(window).scroll(function(){
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 1400px;
             @media screen and (max-width: 1260px){
-              
+
             }
         }
         .header-wrap{
@@ -248,7 +254,7 @@ $(window).scroll(function(){
             @media screen and (max-width: 1260px){
                 width: 91%;
             }
-    
+
         }
         .header-logo {
                 max-width: 160px;
@@ -508,7 +514,7 @@ $(window).scroll(function(){
                 padding: 31px 16px;
              }
         }
-    }   
+    }
     .feedback-form{
         padding:70px 70px 90px;
          @media(max-width: 960px){
@@ -579,7 +585,7 @@ $(window).scroll(function(){
         box-sizing: border-box;
         width: 100%;
         &:hover{
-           background: #7f62ff; 
+           background: #7f62ff;
            transition: all 0.3s;
         }
     }

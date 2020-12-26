@@ -1,5 +1,5 @@
 <template>
-    <div class="coworking example-classname">
+    <div class="coworking example-classname display">
         <div class="coworking-container">
              <no-ssr>
                 <carousel class="сoworking-carousel" :items="1" :nav="false" :loop="true" :responsive="{0:{stagePadding:0},560:{stagePadding:140}}">

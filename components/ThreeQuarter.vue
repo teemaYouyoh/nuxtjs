@@ -1,5 +1,5 @@
 <template>
-    <div id="about" class="quarter quarter-three example-classname">
+    <div id="about" class="quarter quarter-three example-classname display">
         <div class="quarter-container">
             <div class="quar-wr">
                   <p class="quarter-about">О КВАРТАЛЕ</p>
@@ -312,7 +312,7 @@
                   @media screen and (max-width: 560px){
                     bottom: -30px;
                 }
-                
+
             }
     }
      .quarter-right .next{

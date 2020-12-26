@@ -1,5 +1,5 @@
 <template>
-   <div class="feedback">
+   <div class="feedback display">
        <div class="feedback-header">
            <div class="feedback-wrap">
                <h3> <span>Обратная</span> связь</h3>
@@ -20,5 +20,5 @@
 <script>
 </script>
 <style lang="scss">
-  
+
 </style>

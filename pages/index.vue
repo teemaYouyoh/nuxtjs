@@ -130,4 +130,9 @@ body{
   .vs-button-primary.vs-button-filled:hover{
     box-shadow: unset !important;
   }
+
+
+  .display{
+    height: 100vh;
+  }
 </style>
